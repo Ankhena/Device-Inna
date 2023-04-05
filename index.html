@@ -127,8 +127,10 @@
         <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
         <h3 class="contacts-subtitle">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -149,19 +151,43 @@
         <a class="button button-feedback" href="#">Подробнее о нас</a>
       </section>
 
-      <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь
+      <section class="newsletter">
+        <h2 class="newsletter-title">Подпишитесь
           на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="ssubscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" id="e-mail" name="email" placeholder="Ваш e-mail">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email.</label>
+          <input type="email" id="e-mail" name="newsletter-email" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
         </form>
         <p>Это бесплатно</p>
       </section>
     </main>
+
     <footer class="page-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты.</h2>
+        <img class="footer-contacts-logo" src="#" alt="Логотип Интернет-магазина «Девайс».">
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+      </section>
+
+      <section class="footer-services">
+        <h2 class="visually-hidden">Услуги.</h2>
+        <ul class="footer-services-list">
+          <li class="footer-services-item">
+            <a class="footer-services-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-services-link">
+            <a class="footer-services-item" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-services-item">
+            <a class="footer-services-link" href="#">Кредит</a>
+          </li>
+        </ul>
+      </section>
 
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети.</h2>
@@ -182,6 +208,7 @@
             </a>
           </li>
         </ul>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </section>
     </footer>
