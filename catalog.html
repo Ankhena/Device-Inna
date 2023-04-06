@@ -57,7 +57,46 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="visually-hidden">Фильтр:</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="black" checked>
+              Черный
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="white" checked>
+              Белый
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="blue">
+              Синий
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="red">
+              Красный
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="pink">
+              Розовый
+            </label>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group" checked>
+              Есть
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group">
+              Нет
+            </label>
+          </fieldset>
+          <a class="button button-filter-link" href="#">Показать</a>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
     </main>
 
