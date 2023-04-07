@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-        <img class="navigation-logo-image" src="#" alt="Логотип Интернет-магазина «Девайс».">
+          <img class="navigation-logo-image" src="#" alt="Логотип Интернет-магазина «Девайс».">
         </a>
         <form class="serach-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="search-text" class="visually-hidden">Введите текст.</label>
@@ -146,13 +146,11 @@
             <span class="product-card-price">1 500 ₽</span>
           </li>
         </ul>
-        <button class="button pagination-load" type="button">Загрузить еще</button>
+        <a class="button pagination-load" type="button" href="#">Загрузить еще</a>
+        <a class="pagination-link pagination-prev pagination-disabled">
+          <span class="visually-hidden">Назад</span>
+        </a>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Назад</span>
-            </a>
-          </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -163,15 +161,15 @@
             <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Вперед</span>
-            </a>
+            <a class="pagination-link" href="#">15</a>
           </li>
         </ul>
-
+        <a class="pagination-link pagination-next" href="#">
+          <span class="visually-hidden">Вперед</span>
+        </a>
       </section>
     </main>
 
