@@ -106,3 +106,25 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+.button-delivery {
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFE17F;
+  ;
+}
+
+.delivery-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.tooltip {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #000000;
+}
