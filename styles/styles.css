@@ -223,3 +223,33 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+
+/*Filter*/
+
+.filter-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-show {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*Sorting*/
+
+.sort-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*Product-list*/
