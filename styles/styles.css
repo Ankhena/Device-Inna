@@ -111,7 +111,6 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: #FFE17F;
-  ;
 }
 
 .delivery-title {
@@ -139,4 +138,37 @@ body {
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+}
+
+.about-us-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.about-us-item {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+/*Newsletter*/
+
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+.newsletter-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
 }
