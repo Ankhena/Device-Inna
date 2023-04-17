@@ -253,3 +253,14 @@ body {
 }
 
 /*Product-list*/
+
+.product-card-link {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-price {
+  line-height: 21px;
+}
