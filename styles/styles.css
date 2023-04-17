@@ -53,4 +53,49 @@ body {
   line-height: 30px;
   color: #444444;
   background-color: #FFFFFF;
+  margin: 0;
+}
+
+/*Pages*/
+
+.page-header {
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-user {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.button-hero-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.table-size {
+  font-size: 36px;
+  color: #000000;
+}
+
+.table-description {
+  font-size: 16px;
 }
