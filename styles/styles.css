@@ -128,3 +128,15 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.contacts-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
