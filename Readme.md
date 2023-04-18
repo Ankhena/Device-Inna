@@ -2,7 +2,7 @@
 
 * Студент: [Инна Ладыженская](https://up.htmlacademy.ru/htmlcss/36/user/2286771).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+https://innalady.github.io/Device-Inna/
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
