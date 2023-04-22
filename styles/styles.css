@@ -37,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1440px;
 }
 
 /*Pages*/
@@ -45,7 +46,7 @@ body {
   background-color: #FFE17F;
   color: #000000;
   width: 1160px;
-  margin: 40px 140px 0 140px;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -121,12 +122,17 @@ body {
 
 .main-wrapper {
   width: 1160px;
-  margin: 0 140px 0 140px;
+  margin: 0 auto;
 }
+
 /*Goods*/
 
 .slider-container {
   display: flex;
+}
+
+.goods {
+  padding-right: 40px;
 }
 
 .hero-title {
@@ -168,22 +174,32 @@ body {
 
 .services {
   display: flex;
-  margin-top: 70px;
   background-color: #F0F0F0;
   width: 1440px;
 }
 
 .services-container {
-  margin-top: 64px;
-  margin-bottom: 65px;
-  margin-left: 140px;
-  min-width: 280px;
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  width: 287px;
+  margin-right: auto;
 }
 
 .services-tabs {
-  padding: 73px 63px 73px 116px;
   margin: 0;
-  margin-right: 140px;
+  padding: 0;
+  margin-right: 63px;
+  width: 694px;
+}
+
+.delivery {
+  width: 452px;
 }
 
 .delivery-title {
@@ -203,9 +219,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   width: 1160px;
-  margin-left: 140px;
-  margin-right: 140px;
-  background-color: #F0F0F0;;
+  margin: 0 auto;
+  background-color: #F0F0F0;
 }
 
 /*Contacts*/
@@ -213,11 +228,12 @@ body {
 .contacts-container {
   display: flex;
   width: 1160px;
-  margin: 70px 140px 0 140px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.about-us {
-  margin-right: 108px;
+.contacts {
+  width: 532px;
 }
 
 .contacts-title {
@@ -237,6 +253,10 @@ body {
 }
 
 /*About us*/
+
+.about-us {
+  width: 520px;
+}
 
 .about-us-title {
   font-family: Raleway, sans-serif;
@@ -268,25 +288,22 @@ body {
 }
 
 .newsletter-text {
-  margin-left: 252px;
+  margin-left: auto;
   margin-top: 74px;
-  margin-bottom: 0;
+  width: 560px;
 }
 
 .newsletter-container {
   display: flex;
-  margin-left: 147px;
-  margin-right: 133px;
+  margin: 0 auto;
+  width: 1160px;
 }
-
 
 .newsletter-form-container {
   display: flex;
   padding: 0;
-  margin-top: 144px;
-  margin-left :141px;
-  margin-right: 141px;
-  width: 1158px;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .button {
@@ -296,15 +313,16 @@ body {
   color: #000000;
 }
 
-.free {
-  margin: 0;
-}
-
 /*Page-footer*/
 
 .page-footer {
   background-color: #444444;
   width: 1440px;
+}
+
+.page-footer-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .footer-contacts-address {
