@@ -78,6 +78,11 @@ body {
   min-width: 231px;
 }
 
+.navigation-item-exit {
+  padding-right: 26px;
+  min-width: 231px;
+}
+
 .navigation-item-compare {
   padding-right: 36px;
 }
