@@ -110,9 +110,18 @@ body {
   color: #000000;
 }
 
-
 .main-container {
   flex-grow: 1;
+}
+
+.main-wrapper {
+  width: 1160px;
+  margin: 0 140px 0 140px;
+}
+/*Goods*/
+
+.slider-container {
+  display: flex;
 }
 
 .hero-title {
@@ -152,12 +161,35 @@ body {
   color: #FFE17F;
 }
 
+.services {
+  display: flex;
+  margin-top: 70px;
+  background-color: #F0F0F0;
+  width: 1440px;
+}
+
+.services-container {
+  margin-top: 64px;
+  margin-bottom: 65px;
+  margin-left: 140px;
+  min-width: 280px;
+}
+
+.services-tabs {
+  padding: 73px 63px 73px 116px;
+  margin: 0;
+  margin-right: 140px;
+}
+
 .delivery-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
 }
+
+/*Tooltip*/
 
 .tooltip {
   font-family: Raleway, sans-serif;
@@ -165,9 +197,23 @@ body {
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
+  width: 1160px;
+  margin-left: 140px;
+  margin-right: 140px;
+  background-color: #F0F0F0;;
 }
 
 /*Contacts*/
+
+.contacts-container {
+  display: flex;
+  width: 1160px;
+  margin: 70px 140px 0 140px;
+}
+
+.about-us {
+  margin-right: 108px;
+}
 
 .contacts-title {
   font-family: Raleway, sans-serif;
@@ -204,6 +250,9 @@ body {
 
 .newsletter {
   background-color: #F0F0F0;
+  width: 1440px;
+  margin-top: 70px;
+  padding-bottom: 56px;
 }
 
 .newsletter-title {
@@ -213,6 +262,28 @@ body {
   color: #000000;
 }
 
+.newsletter-text {
+  margin-left: 252px;
+  margin-top: 74px;
+  margin-bottom: 0;
+}
+
+.newsletter-container {
+  display: flex;
+  margin-left: 147px;
+  margin-right: 133px;
+}
+
+
+.newsletter-form-container {
+  display: flex;
+  padding: 0;
+  margin-top: 144px;
+  margin-left :141px;
+  margin-right: 141px;
+  width: 1158px;
+}
+
 .button {
   font-family: Raleway, sans-serif;
   line-height: 21px;
@@ -220,10 +291,15 @@ body {
   color: #000000;
 }
 
+.free {
+  margin: 0;
+}
+
 /*Page-footer*/
 
 .page-footer {
   background-color: #444444;
+  width: 1440px;
 }
 
 .footer-contacts-address {
