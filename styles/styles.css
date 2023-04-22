@@ -348,6 +348,11 @@ body {
 
 /*Inner-page*/
 
+.breadcrumbs-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .inner-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -362,8 +367,28 @@ body {
   text-decoration: none;
 }
 
+/*Catalog*/
+
+.catalog-products {
+  background-color: #F0F0F0;
+  width: 1440px;
+}
+
+.catalog-products-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
 
 /*Filter*/
+
+.filter-container {
+  width: 320px;
+}
 
 .filter-title {
   font-family: "Raleway", sans-serif;
@@ -396,6 +421,13 @@ body {
 }
 
 /*Product-list*/
+.product-list {
+  padding: 0;
+  margin: 0;
+}
+.product-list-container {
+  background-color: #FFFFFF;
+}
 
 .product-card-link {
   font-weight: 700;
