@@ -37,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1440px;
+  min-width: 1440px;
 }
 
 /*Pages*/
@@ -175,7 +175,7 @@ body {
 .services {
   display: flex;
   background-color: #F0F0F0;
-  width: 1440px;
+  min-width: 1440px;
 }
 
 .services-container {
@@ -275,7 +275,7 @@ body {
 
 .newsletter {
   background-color: #F0F0F0;
-  width: 1440px;
+  min-width: 1440px;
   margin-top: 70px;
   padding-bottom: 56px;
 }
@@ -317,7 +317,7 @@ body {
 
 .page-footer {
   background-color: #444444;
-  width: 1440px;
+  min-width: 1440px;
 }
 
 .page-footer-container {
@@ -371,7 +371,7 @@ body {
 
 .catalog-products {
   background-color: #F0F0F0;
-  width: 1440px;
+  min-width: 1440px;
 }
 
 .catalog-products-container {
