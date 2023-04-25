@@ -23,6 +23,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -30,6 +34,10 @@ body {
   color: #444444;
   background-color: #FFFFFF;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1440px;
 }
 
 /*Pages*/
@@ -37,6 +45,62 @@ body {
 .page-header {
   background-color: #FFE17F;
   color: #000000;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 1040px;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 150px;
+}
+
+.form-container {
+  display: flex;
+  padding-top: 30px;
+}
+
+.search-form {
+  width: 517px;
+  padding-right: 26px;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  width: 497px;
+  padding: 0;
+}
+
+.navigation-item-enter {
+  padding-right: 26px;
+  min-width: 231px;
+}
+
+.navigation-item-exit {
+  padding-right: 26px;
+  min-width: 231px;
+}
+
+.navigation-item-compare {
+  padding-right: 36px;
+}
+
+.navigation-user-container {
+  display: flex;
+  padding-top: 30px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 480px;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -50,6 +114,25 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/*Goods*/
+
+.slider-container {
+  display: flex;
+}
+
+.goods {
+  padding-right: 40px;
 }
 
 .hero-title {
@@ -89,12 +172,45 @@ body {
   color: #FFE17F;
 }
 
+.services {
+  display: flex;
+  background-color: #F0F0F0;
+  min-width: 1440px;
+}
+
+.services-container {
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  width: 287px;
+  margin-right: auto;
+}
+
+.services-tabs {
+  margin: 0;
+  padding: 0;
+  margin-right: 63px;
+  width: 694px;
+}
+
+.delivery {
+  width: 452px;
+}
+
 .delivery-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
 }
+
+/*Tooltip*/
 
 .tooltip {
   font-family: Raleway, sans-serif;
@@ -102,9 +218,23 @@ body {
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
 }
 
 /*Contacts*/
+
+.contacts-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contacts {
+  width: 532px;
+}
 
 .contacts-title {
   font-family: Raleway, sans-serif;
@@ -124,6 +254,10 @@ body {
 
 /*About us*/
 
+.about-us {
+  width: 520px;
+}
+
 .about-us-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -141,6 +275,9 @@ body {
 
 .newsletter {
   background-color: #F0F0F0;
+  min-width: 1440px;
+  margin-top: 70px;
+  padding-bottom: 56px;
 }
 
 .newsletter-title {
@@ -148,6 +285,25 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.newsletter-text {
+  margin-left: auto;
+  margin-top: 74px;
+  width: 560px;
+}
+
+.newsletter-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.newsletter-form-container {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .button {
@@ -161,6 +317,12 @@ body {
 
 .page-footer {
   background-color: #444444;
+  min-width: 1440px;
+}
+
+.page-footer-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .footer-contacts-address {
@@ -186,6 +348,11 @@ body {
 
 /*Inner-page*/
 
+.breadcrumbs-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .inner-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -200,8 +367,28 @@ body {
   text-decoration: none;
 }
 
+/*Catalog*/
+
+.catalog-products {
+  background-color: #F0F0F0;
+  min-width: 1440px;
+}
+
+.catalog-products-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
 
 /*Filter*/
+
+.filter-container {
+  width: 320px;
+}
 
 .filter-title {
   font-family: "Raleway", sans-serif;
@@ -234,6 +421,13 @@ body {
 }
 
 /*Product-list*/
+.product-list {
+  padding: 0;
+  margin: 0;
+}
+.product-list-container {
+  background-color: #FFFFFF;
+}
 
 .product-card-link {
   font-weight: 700;
