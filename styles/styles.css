@@ -83,11 +83,13 @@ body {
   margin: 0;
   width: 497px;
   padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation-item-enter {
   padding-right: 26px;
-  min-width: 231px;
+  min-width: 230px;
 }
 
 .navigation-item-exit {
@@ -112,11 +114,16 @@ body {
   display: flex;
   min-width: 480px;
   justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
   color: #000000;
   text-decoration: none;
+  padding-top: 5px;
+  display: block;
+  padding-bottom: 5px;
 }
 
 .navigation-link-user {
@@ -125,6 +132,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
 }
 
 .main-container {
