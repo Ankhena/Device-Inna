@@ -211,13 +211,29 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 160px);
   grid-column-gap: 40px;
-
 }
+
 
 .category-list-item {
   display: grid;
   grid-template-rows: 160px 60px;
   grid-row-gap: 32px;
+  position: relative;
+}
+
+.category-list-item::after {
+  position: absolute;
+  content: " ";
+  width: 160px;
+  height: 160px;
+  background: #FFE17F;
+  z-index: -1;
+  display: block;
+}
+
+.image-category {
+  display: block;
+  margin: auto auto;
 }
 
 .category-item-link {
