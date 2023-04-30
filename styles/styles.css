@@ -81,7 +81,7 @@ body {
 .navigation-list {
   display: flex;
   margin: 0;
-  width: 497px;
+  min-width: 497px;
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -93,8 +93,13 @@ body {
 }
 
 .navigation-item-exit {
+  min-width: 56px;
+  padding-left: 28px;
   padding-right: 26px;
-  min-width: 231px;
+}
+
+.navigation-item-person {
+  min-width: 146px;
 }
 
 .navigation-item-compare {
@@ -122,7 +127,7 @@ body {
   color: #000000;
   text-decoration: none;
   padding-top: 5px;
-  display: block;
+  display: inline-block;
   padding-bottom: 5px;
 }
 
@@ -161,6 +166,12 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+}
+
+.hero-text {
+  margin-top: 29px;
+  margin-bottom: 50px;
 }
 
 .button-link {
@@ -171,6 +182,10 @@ body {
   color: #000000;
 }
 
+.table-specifications {
+  margin-top: 50px;
+}
+
 .table-size {
   font-size: 36px;
   color: #000000;
@@ -178,6 +193,21 @@ body {
 
 .table-description {
   font-size: 16px;
+  padding: 0;
+  padding-right: 20px;
+  padding-top: 12px;
+}
+
+/*Categoties*/
+
+.catalog-category {
+  margin-top: 70px;
+}
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .category-item-link {
@@ -197,6 +227,8 @@ body {
   display: flex;
   background-color: #F0F0F0;
   min-width: 1440px;
+  margin-top: 70px;
+  padding: 0;
 }
 
 .services-container {
@@ -210,6 +242,17 @@ body {
   padding: 0;
   width: 287px;
   margin-right: auto;
+  list-style-type: none;
+  padding-top: 64px;
+  padding-bottom: 65px;
+}
+
+.services-item {
+  padding-bottom: 35px;
+}
+
+.services-item:last-child {
+  padding-bottom: 0;
 }
 
 .services-tabs {
@@ -217,10 +260,15 @@ body {
   padding: 0;
   margin-right: 63px;
   width: 694px;
+  padding-top: 73px;
+  padding-bottom: 73px;
 }
 
 .delivery {
   width: 452px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .delivery-title {
@@ -229,11 +277,18 @@ body {
   line-height: 50px;
   color: #000000;
   margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
+}
+
+.delivery-text {
+  margin: 0;
+  padding: 0;
 }
 
 /*Tooltip*/
 
-.tooltip {
+.tooltip-text {
   font-family: Raleway, sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -242,6 +297,10 @@ body {
   width: 1160px;
   margin: 0 auto;
   background-color: #F0F0F0;
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*Contacts*/
@@ -251,6 +310,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   justify-content: space-between;
+  margin-top: 70px;
 }
 
 .contacts {
@@ -262,21 +322,50 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding-top: 47px;
 }
 
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
 }
 
 .contacts-phone {
   color: #444444;
 }
 
+.contacts-address-text {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-schedule {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+
 /*About us*/
 
 .about-us {
   width: 520px;
+  padding-bottom: 52px;
 }
 
 .about-us-title {
@@ -284,12 +373,25 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.about-us-text {
+  margin-bottom: 30px;
 }
 
 .about-us-item {
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 19px;
+}
+
+.about-us-list {
+  list-style-type: none;
 }
 
 /*Newsletter*/
@@ -306,9 +408,13 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 64px;
 }
 
 .newsletter-text {
+  margin: 0;
   margin-left: auto;
   margin-top: 74px;
   width: 560px;
@@ -325,6 +431,7 @@ body {
   padding: 0;
   margin: 0 auto;
   width: 1160px;
+  padding-top: 144px;
 }
 
 .button {
@@ -333,6 +440,15 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.button-link {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/*Newsletter-form-container*/
+
 
 /*Page-footer*/
 
@@ -446,6 +562,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .product-list-container {
   background-color: #FFFFFF;
 }
