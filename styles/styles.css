@@ -708,10 +708,21 @@ body {
 
 /*Pagination*/
 
+.button.pagination-load {
+  border: 3px solid #E5E5E5;
+  display: inline-block;
+  width: 760px;
+  margin: 44px 39px;
+}
+
 .pagination-load {
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
+  text-align: center;
 }
 
 .pagination-prev {
