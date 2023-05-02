@@ -9,7 +9,7 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation">
+      <nav class="navigation navigation-inner">
         <a class="header-logo" href="index.html">
           <img class="logo header-logo-image" src="images/logo.svg" width="145" height="36"
             alt="Логотип Интернет-магазина «Девайс».">
@@ -21,8 +21,10 @@
             <button class="button visually-hidden" type="submit">Найти.</button>
           </form>
           <ul class="navigation-list">
+            <li class="navigation-item-person">
+              <a class="navigation-link" href="#">Коля Петухов</a>
+            </li>
             <li class="navigation-item-exit">
-              <span>Коля Петухов</span>
               <a class="navigation-link" href="#">Выйти</a>
             </li>
             <li class="navigation-item-compare">
@@ -119,16 +121,18 @@
             <div class="sorting-container">
               <h3 class="sort-title">Сортировка:</h3>
               <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярное</option>
-                <option value="cheap">Дешёвое</option>
-                <option value="expensive">Дорогое</option>
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
               </select>
-              <button class="sort-button sort-up" type="button">
-                <span class="visually-hidden">По возрастанию.</span>
-              </button>
-              <button class="sort-button sort-down" type="button">
-                <span class="visually-hidden">По убыванию.</span>
-              </button>
+              <div class="sorting-button-container">
+                <button class="sort-button sort-up" type="button">
+                  <span class="visually-hidden">По возрастанию.</span>
+                </button>
+                <button class="sort-button sort-down" type="button">
+                  <span class="visually-hidden">По убыванию.</span>
+                </button>
+              </div>
             </div>
             <div class="product-list-container">
               <ul class="product-list">
@@ -170,27 +174,29 @@
                 </li>
               </ul>
               <a class="button pagination-load" href="#">Загрузить еще</a>
-              <a class="pagination-link pagination-prev pagination-disabled">Назад
-              </a>
-              <ul class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-              </ul>
-              <a class="pagination-link pagination-next" href="#">Вперед
-              </a>
+              <div class="pagination-container">
+                <a class="pagination-link pagination-prev pagination-disabled">Назад
+                </a>
+                <ul class="pagination">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination-link pagination-next" href="#">Вперед
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -199,8 +205,10 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <img class="logo footer-logo-image" src="images/logo.svg" width="145" height="36"
-          alt="Логотип Интернет-магазина «Девайс».">
+        <a class="footer-logo" href="index.html" aria-current="page">
+          <img class="logo footer-logo-image" src="images/logo.svg" width="145" height="36"
+            alt="Логотип Интернет-магазина «Девайс».">
+        </a>
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты.</h2>
@@ -218,11 +226,12 @@
             <li class="footer-services-item">
               <a class="footer-services-link" href="#">Гарантия</a>
             </li>
-            <li class="navigation-services-item">
+            <li class="footer-services-item">
               <a class="footer-services-link" href="#">Кредит</a>
             </li>
           </ul>
         </section>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети.</h2>
@@ -243,9 +252,10 @@
               </a>
             </li>
           </ul>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
         </section>
+
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+
       </div>
     </footer>
   </body>
