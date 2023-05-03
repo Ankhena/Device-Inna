@@ -58,6 +58,7 @@ body {
   color: #000000;
   width: 1160px;
   margin: 40px auto 0 auto;
+  z-index: -2;
 }
 
 .navigation {
@@ -162,11 +163,19 @@ body {
   padding-top: 35px;
 }
 
-
 /*Goods*/
 
 .slider-container {
   display: flex;
+  position: relative;
+}
+
+.slider-container::before {
+  position: absolute;
+  content: url("../images/slider/slider-number-01.png");
+  top: -119px;
+  right: 49px;
+  z-index: -1;
 }
 
 .goods {
@@ -184,6 +193,7 @@ body {
   line-height: 50px;
   color: #000000;
   margin: 0;
+  z-index: 2;
 }
 
 .hero-text {
