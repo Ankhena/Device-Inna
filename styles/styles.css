@@ -499,6 +499,7 @@ body {
   grid-template-columns: 240px 444px 238px;
   grid-row-gap: 35px;
   grid-column-gap: 119px;
+  position: relative;
 }
 
 .footer-logo {
@@ -516,16 +517,15 @@ body {
 .footer-contacts-address-text {
   padding: 0;
   margin: 0;
-  position: relative;
 }
 
-.footer-contacts-address-text::before {
+.page-footer-container::after {
   background-color: #FFC700;
-  position: absolute;
   content: "";
   width: 80px;
   height: 7px;
-  top: 99px;
+  position: absolute;
+  bottom: 75px;
 }
 
 .footer-services-link {
@@ -569,7 +569,7 @@ body {
 
 .footer-social-item {
   width: 40px;
-  height: 44px;
+  height: 40px;
   margin-right: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
@@ -689,6 +689,11 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2,360px);
+  gap:40px;
+  padding-top: 70px;
+  padding-left: 40px;
 }
 
 .product-list-container {
@@ -703,8 +708,19 @@ body {
   text-decoration: none;
 }
 
+.product-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-title {
+  max-width: 226px;
+}
+
 .product-card-price {
   line-height: 21px;
+  display: inline-block;
+  align-self: center;
 }
 
 /*Pagination*/
