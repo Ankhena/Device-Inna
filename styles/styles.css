@@ -462,13 +462,14 @@ body {
   width: 1160px;
 }
 
-.newsletter-form-container {
+.newsletter-form {
   display: flex;
   padding: 0;
   margin: 0 auto;
   width: 1160px;
   padding-top: 144px;
 }
+
 
 .button {
   font-family: Raleway, sans-serif;
