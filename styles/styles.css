@@ -58,7 +58,7 @@ body {
   color: #000000;
   width: 1160px;
   margin: 40px auto 0 auto;
-  z-index: -2;
+
 }
 
 .navigation {
@@ -168,14 +168,21 @@ body {
 .slider-container {
   display: flex;
   position: relative;
+
 }
 
-.slider-container::before {
+.slider-hero::before {
   position: absolute;
-  content: url("../images/slider/slider-number-01.png");
-  top: -119px;
+  top: -74px;
   right: 49px;
-  z-index: -1;
+  counter-increment: my-counter;
+  content: counter(my-counter, decimal-leading-zero);
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  width: 250px;
+  height: 135px;
 }
 
 .goods {
@@ -185,6 +192,7 @@ body {
 
 .slider-hero {
   margin-top: -29px;
+  counter-reset: my-counter;
 }
 
 .hero-title {
@@ -193,7 +201,8 @@ body {
   line-height: 50px;
   color: #000000;
   margin: 0;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-text {
@@ -235,15 +244,10 @@ body {
   justify-content: center;
 }
 
-
-.slider-pagination-item {
+.slider-pagination-item:not(:last-child) {
   justify-content: space-between;
   margin: 0;
   margin-right: 20px;
-}
-
-.slider-pagination-item:last-child {
-  margin-right: 0;
 }
 
 .slider-pagination-button {
