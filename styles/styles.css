@@ -58,7 +58,6 @@ body {
   color: #000000;
   width: 1160px;
   margin: 40px auto 0 auto;
-
 }
 
 .navigation {
@@ -69,7 +68,7 @@ body {
 }
 
 .navigation-main {
-  padding-bottom: 150px;
+  padding-bottom: 121px;
 }
 
 .navigation-inner {
@@ -168,12 +167,42 @@ body {
 .slider-container {
   display: flex;
   position: relative;
+}
 
+.slider-button {
+  width: 20px;
+  height: 60px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slider/slider-arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-prev {
+  transform: rotate(180deg);
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 530px;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+
+.slider-image {
+  display: block;
 }
 
 .slider-hero::before {
   position: absolute;
-  top: -74px;
+  top: -71px;
   right: 49px;
   counter-increment: my-counter;
   content: counter(my-counter, decimal-leading-zero);
@@ -188,6 +217,7 @@ body {
 .goods {
   margin-top: -150px;
   padding-right: 40px;
+  position: relative;
 }
 
 .slider-hero {
@@ -242,6 +272,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  bottom: 26px;
+  left: 20px;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -260,6 +293,7 @@ body {
   box-sizing: border-box;
   border: 2px solid #000000;
   background: #FFFFFF;
+
 }
 
 .slider-pagination-button-current {
