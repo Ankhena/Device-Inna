@@ -222,7 +222,6 @@ body {
 
 .slider-hero {
   counter-reset: my-counter;
-
 }
 
 .hero-title {
@@ -275,6 +274,7 @@ body {
   justify-content: center;
   position: relative;
   left: 20px;
+  margin-top: -26px;
 }
 
 .slider-pagination-item:not(:last-child) {
