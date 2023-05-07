@@ -195,7 +195,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  top: 401px;
+  top: 427px;
   width: 530px;
   display: flex;
   justify-content: space-between;
@@ -222,6 +222,7 @@ body {
 
 .slider-hero {
   counter-reset: my-counter;
+
 }
 
 .hero-title {
