@@ -169,12 +169,14 @@ body {
 
 .slider {
   display: flex;
-  position: relative;
 }
 
 .goods {
   padding-right: 40px;
   margin-top: -124px;
+}
+
+.slider-wrapper {
   position: relative;
 }
 
@@ -196,11 +198,12 @@ body {
 
 .slider-controls {
   position: absolute;
-  top: 53%;
+  top: 50%;
   width: 530px;
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
+  transform: translateY(-250%);
 }
 
 .slider-image {
