@@ -175,6 +175,7 @@ body {
 .goods {
   padding-right: 40px;
   margin-top: -124px;
+  position: relative;
 }
 
 .slider-button {
@@ -195,7 +196,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  top: 427px;
+  top: 53%;
   width: 530px;
   display: flex;
   justify-content: space-between;
