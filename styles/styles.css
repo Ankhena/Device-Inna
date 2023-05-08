@@ -639,15 +639,15 @@ body {
 }
 
 .services-button-active:hover {
-  width: 220px;
+  width: 74%;
 }
 
 .services-button-active:active {
-  width: 220px;
+  width: 74%;
 }
 
 .services-button-active:focus {
-  width: 220px;
+  width: 74%;
 }
 
 .services-button-active:after {
