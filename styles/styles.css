@@ -221,7 +221,7 @@ body {
   height: 135px;
 }
 
-.slider-hero {
+.slide-hero {
   counter-reset: my-counter;
 }
 
@@ -240,13 +240,7 @@ body {
   margin-bottom: 50px;
 }
 
-.button-link {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-}
+
 
 .table-specifications {
   margin-top: 50px;
@@ -346,26 +340,29 @@ body {
   color: #000000;
 }
 
-.button-delivery {
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #FFE17F;
-
-}
-
 .services {
   display: flex;
   background-color: #F0F0F0;
   min-width: 1440px;
-  margin-top: 70px;
+  margin-top: 172px;
   padding: 0;
-
 }
 
 .services-container {
   margin: 0 auto;
   width: 1160px;
   display: flex;
+  position: relative;
+  top: -102px;
+}
+
+.services-container::after {
+  width: 7px;
+  height: 319px;
+  position: absolute;
+  content: " ";
+  left: 280px;
+  background: #000000;
 }
 
 .services-list {
@@ -415,6 +412,11 @@ body {
 .delivery-text {
   margin: 0;
   padding: 0;
+}
+
+.delivery-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Tooltip*/
@@ -595,14 +597,14 @@ body {
 }
 
 .button:hover::after {
-    background: #FFE17F;
-    position: absolute;
-    top: 0;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    z-index: -1;
+  background: #FFE17F;
+  position: absolute;
+  top: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
 }
 
 .button:active::after {
@@ -616,10 +618,35 @@ body {
 }
 
 .button-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  min-width: 160px;
+  text-align: center;
   display: block;
   padding: 10px;
   margin: 0;
   z-index: 0;
+}
+
+.services-button-active {
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFE17F;
+  width: 160px;
+}
+
+.services-button-active:after {
+  position: absolute;
+  content: " ";
+  width: 280px;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  background: #000000;
+  margin-top: -10px;
 }
 
 /*Page-footer*/
