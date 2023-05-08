@@ -294,7 +294,7 @@ body {
   background-color: #000000;
 }
 
-/*Categoties*/
+/*Categories*/
 
 .catalog-category {
   width: 1160px;
@@ -636,6 +636,18 @@ body {
   text-transform: uppercase;
   color: #FFE17F;
   width: 160px;
+}
+
+.services-button-active:hover {
+  width: 220px;
+}
+
+.services-button-active:active {
+  width: 220px;
+}
+
+.services-button-active:focus {
+  width: 220px;
 }
 
 .services-button-active:after {
