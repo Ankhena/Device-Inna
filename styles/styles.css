@@ -318,6 +318,10 @@ body {
   position: relative;
 }
 
+.category-list-item:focus {
+  border: 2px solid #AF4FFF;
+}
+
 .category-list-item::after {
   position: absolute;
   content: " ";
@@ -326,6 +330,15 @@ body {
   background: #FFE17F;
   z-index: -1;
   display: block;
+}
+
+.category-list-item:hover::after {
+  background: #FFC700;;
+}
+
+.category-list-item:active {
+  background: #FFE17F;
+  opacity: 0.3;
 }
 
 .image-category {
