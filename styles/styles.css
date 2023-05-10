@@ -98,7 +98,25 @@ body {
 
 .navigation-item-enter {
   padding-right: 26px;
-  min-width: 230px;
+  min-width: 235px;
+  box-sizing: border-box;
+}
+
+.navigation-icon {
+  padding-right: 12px;
+}
+
+.navigation-link:hover {
+  opacity: 0.3;
+}
+
+.navigation-link:focus {
+  border: 1px solid #7B61FF;
+  opacity: 1;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
 }
 
 .navigation-item-exit {
@@ -112,8 +130,10 @@ body {
 }
 
 .navigation-item-compare {
-  padding-right: 36px;
+  padding-right: 46px;
+  margin: 0;
 }
+
 
 .navigation-user-container {
   display: flex;
