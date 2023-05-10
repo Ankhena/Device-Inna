@@ -240,8 +240,6 @@ body {
   margin-bottom: 50px;
 }
 
-
-
 .table-specifications {
   margin-top: 50px;
 }
@@ -456,14 +454,42 @@ body {
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
-  width: 1160px;
-  margin: 0 auto;
-  background-color: #F0F0F0;
   text-align: center;
-  margin-top: 70px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin: 40px auto;
+
 }
+
+.tooltip-link {
+  margin: 0 auto;
+  width: 1160px;
+  background-color: #F0F0F0;
+  margin-top: 70px;
+  display: flex;
+  text-decoration: none;
+}
+
+.tooltip:active {
+  opacity: 0.3;
+}
+
+.tooltip-link:focus {
+  border: 2px solid #AF4FFF;
+}
+
+
+.tooltip-image:before {
+  content: "";
+  display: block;
+  background: url("../images/track.svg") no-repeat #FFE17F center;
+  width: 125px;
+  height: 100px;
+}
+
+.tooltip-image:hover:before {
+  background: url("../images/track.svg") no-repeat #FFC700 center;
+}
+
+
 
 /*Contacts*/
 
