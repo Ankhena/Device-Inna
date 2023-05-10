@@ -476,7 +476,6 @@ body {
   border: 2px solid #AF4FFF;
 }
 
-
 .tooltip-image:before {
   content: "";
   display: block;
@@ -488,8 +487,6 @@ body {
 .tooltip-image:hover:before {
   background: url("../images/track.svg") no-repeat #FFC700 center;
 }
-
-
 
 /*Contacts*/
 
@@ -503,6 +500,17 @@ body {
 
 .contacts {
   width: 532px;
+  position: relative;
+}
+
+.contacts:after {
+  position: absolute;
+  content: " ";
+  width: 84px;
+  height: 7px;
+  background: #000000;
+  top: 0;
+  left: 0;
 }
 
 .contacts-title {
@@ -554,7 +562,19 @@ body {
 .about-us {
   width: 520px;
   padding-bottom: 52px;
+  position: relative;
 }
+
+.about-us:after {
+  position: absolute;
+  content: " ";
+  width: 84px;
+  height: 7px;
+  background: #000000;
+  top: 0;
+  left: 0;
+}
+
 
 .about-us-title {
   font-family: Raleway, sans-serif;
@@ -576,10 +596,23 @@ body {
   line-height: 20px;
   color: #000000;
   margin-bottom: 19px;
+  padding-top: 5px;
 }
 
 .about-us-list {
   list-style-type: none;
+}
+
+.about-us-item:after {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  background: #FFC700;
+  display: block;
+  border-radius: 50%;
+  right: 26px;
+  position: relative;
+  bottom: 17px;
 }
 
 /*Newsletter*/
