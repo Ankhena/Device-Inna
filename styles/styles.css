@@ -432,6 +432,17 @@ body {
   padding: 0;
 }
 
+.delivery:after {
+  content: " ";
+  background: url(../images/delivery.svg);
+  width: 136px;
+  height: 165px;
+  display: block;
+  bottom: 78px;
+  right: 63px;
+  position: absolute;
+}
+
 .services-tabs {
   display: flex;
   justify-content: space-between;
