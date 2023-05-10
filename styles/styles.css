@@ -358,18 +358,6 @@ body {
   display: block;
 }
 
-
-.category-image-cameras:after {
-  position: absolute;
-  content: "";
-  width: 87px;
-  height: 117px;
-  background-repeat: no-repeat;
-  top: 43px;
-  left: 32px;
-  background-image: url("../images/index-catalog/index-catalog-3.svg");
-}
-
 .services {
   display: flex;
   background-color: #F0F0F0;
