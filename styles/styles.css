@@ -98,7 +98,7 @@ body {
 
 .navigation-item-enter {
   padding-right: 26px;
-  min-width: 235px;
+  min-width: 230px;
   box-sizing: border-box;
 }
 
@@ -130,10 +130,32 @@ body {
 }
 
 .navigation-item-compare {
-  padding-right: 46px;
+  padding-right: 36px;
   margin: 0;
 }
 
+.basket-counter {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+}
+
+.basket-counter:before {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: block;
+  left: -16px;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  content: "2";
+  bottom: 0;
+}
 
 .navigation-user-container {
   display: flex;
