@@ -958,6 +958,17 @@ body {
   justify-self: start;
 }
 
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
 .footer-contacts-address {
   color: #FFFFFF;
   font-size: 16px;
@@ -985,6 +996,22 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   line-height: 21px;
+  letter-spacing: 0.2em;
+}
+
+.footer-services-link:hover {
+  color: #FFC700;
+  text-decoration-line: underline;
+}
+
+.footer-services-link:active {
+  opacity: 0.3;
+  text-decoration-line: underline;
+}
+
+.footer-services-link:focus {
+  border: 2px solid #AF4FFF;
+  text-decoration-line: none;
 }
 
 .footer-services-list {
@@ -1002,6 +1029,20 @@ body {
   line-height: 20px;
   color: #FFFFFF;
   justify-self: end;
+  padding: 0;
+  align-self: baseline;
+}
+
+.footer-contacts-phone:hover {
+  color: #FFC700;
+}
+
+.footer-contacts-phone:active {
+  opacity: 0.3;
+}
+
+.footer-contacts-phone:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .footer-social {
@@ -1025,6 +1066,38 @@ body {
   margin-right: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+  position: relative;
+}
+
+.footer-social-item:hover {
+  background: #FFC700;
+}
+
+.footer-social-item:active .footer-social-link {
+  opacity: 0.3;
+}
+
+.footer-social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 30%;
+  left: 30%;
+}
+
+.footer-social-tw {
+  background-image: url("../images/twitter.svg");
+}
+
+.footer-social-youtube {
+  background-image: url("../images/youtube.svg");
+}
+
+.footer-social-telegram {
+  background-image: url("../images/telegram.svg");
 }
 
 .footer-social-item:nth-child(3n) {
@@ -1034,7 +1107,27 @@ body {
 .htmlacademy-link {
   justify-self: end;
   margin-top: -20px;
+  width: 115px;
+  height: 33px;
 }
+
+.htmlacademy-icon {
+color: #FFC700;
+}
+
+.htmlacademy-icon:hover {
+color: #FFFFFF;
+}
+
+.htmlacademy-icon:active {
+  opacity: 0.3;
+}
+
+.htmlacademy-link:focus {
+  color: #FFC700;
+  border: 2px solid #AF4FFF;
+}
+
 
 /*Inner-page*/
 
