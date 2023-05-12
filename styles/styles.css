@@ -61,6 +61,7 @@ body {
   position: relative;
   top: 26px;
 }
+
 .header-logo {
   position: absolute;
   top: -20px;
@@ -78,8 +79,6 @@ body {
 
 .navigation-inner {
   padding-bottom: 36px;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .form-container {
@@ -101,17 +100,17 @@ body {
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
-
+  box-sizing: border-box;
 }
 
 .navigation-item-enter {
   padding-right: 26px;
-  min-width: 230px;
+  min-width: 231px;
   box-sizing: border-box;
 }
 
 .navigation-icon {
-  padding-right: 12px;
+  padding-right: 11px;
 }
 
 .navigation-link:hover {
@@ -131,16 +130,21 @@ body {
   min-width: 56px;
   padding-left: 28px;
   padding-right: 26px;
+  opacity: 0.3;
+  box-sizing: border-box;
 }
 
 .navigation-item-person {
-  min-width: 146px;
+  min-width: 140px;
+  box-sizing: border-box;
 }
 
 .navigation-item-compare {
-  padding-right: 36px;
+  padding-right: 28px;
   margin: 0;
+  box-sizing: border-box;
 }
+
 
 .basket-counter {
   position: relative;
@@ -157,7 +161,7 @@ body {
   border-radius: 50%;
   background-color: #FFFFFF;
   display: block;
-  left: -16px;
+  left: -18px;
   text-align: center;
   align-items: center;
   z-index: 1;
@@ -223,7 +227,8 @@ body {
   position: relative;
 }
 
-.dropdownbtn {
+.dropdownbtn,
+.dropdownbtn-inner {
   position: relative;
   border: 2px solid #000000;
   width: 50px;
@@ -234,14 +239,15 @@ body {
   background: #FFE17F;
 }
 
-.dropdownbtn::before {
+.dropdownbtn::before,
+.dropdownbtn-inner:before {
   position: absolute;
   background-image: url("../images/header/header-plus.svg");
   width: 16px;
   height: 16px;
   display: block;
-  top: 17px;
-  left: 17px;
+  top: 16px;
+  left: 16px;
   color: #000000;
   content: " ";
 }
@@ -253,7 +259,7 @@ body {
   height: 2px;
   display: none;
   top: 24px;
-  left: 17px;
+  left: 16px;
   color: #000000;
   content: " ";
 }
@@ -290,7 +296,8 @@ body {
 
 .dropdown-wrapper:active .dropdownbtn::after,
 .dropdown-wrapper:active .dropdownbtn,
-.dropdown-wrapper:hover .dropdownbtn {
+.dropdown-wrapper:hover .dropdownbtn,
+.dropdown-wrapper:hover .dropdownbtn-inner {
   opacity: 1;
 }
 
@@ -974,6 +981,7 @@ body {
 .footer-logo:active {
   opacity: 0.3;
 }
+
 .footer-contacts-address {
   color: #FFFFFF;
   font-size: 16px;
@@ -1117,11 +1125,11 @@ body {
 }
 
 .htmlacademy-icon {
-color: #FFC700;
+  color: #FFC700;
 }
 
 .htmlacademy-icon:hover {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .htmlacademy-icon:active {
