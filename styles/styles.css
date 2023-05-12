@@ -354,7 +354,6 @@ body {
 .main-inner {
   padding-top: 35px;
   margin-top: 26px;
-
 }
 
 /*Goods*/
@@ -1139,7 +1138,7 @@ body {
 
 .htmlacademy-link:focus {
   color: #FFC700;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 
@@ -1268,19 +1267,69 @@ body {
   text-decoration: none;
 }
 
-.product-card-content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .product-card-title {
   max-width: 226px;
+}
+
+.product-card-title-link {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card-price {
   line-height: 21px;
   display: inline-block;
   align-self: center;
+}
+
+.product-card {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-card:hover::before,
+.product-card:active::before {
+  position: absolute;
+  content: "Подробнее";
+  background: #FFE17F;
+  top: 180px;
+  width: 210px;
+  height: 8px;
+  left: 70px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 50%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.product-card:active,
+.product-card:hover {
+  opacity: 0.6;
+}
+
+.product-card-link:focus-within {
+  outline: 2px solid #AF4FFF;
+  display: block;
+}
+
+.product-card-title-link:focus-within {
+  outline: 2px solid #AF4FFF;
+}
+.products-new + .image-wrap::before {
+  position: absolute;
+  background: url("../images/new-icon.svg");
+  width: 60px;
+  height: 60px;
+  content: "";
+  top: 27px;
+  right: 27px;
+  display: block;
 }
 
 /*Pagination*/
