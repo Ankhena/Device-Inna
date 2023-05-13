@@ -118,7 +118,7 @@ body {
 }
 
 .navigation-link:focus {
-  border: 1px solid #7B61FF;
+  outline: 1px solid #7B61FF;
   opacity: 1;
 }
 
@@ -144,7 +144,6 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
 
 .basket-counter {
   position: relative;
@@ -188,6 +187,20 @@ body {
   flex-wrap: wrap;
 }
 
+.navigation-user-item {
+  position: relative;
+}
+
+.navigation-link-user.current::before {
+  position: absolute;
+  content: " ";
+  width: 125px;
+  height: 2px;
+  background: #000000;
+  display: block;
+  top: 37px;
+}
+
 .navigation-link {
   color: #000000;
   text-decoration: none;
@@ -206,6 +219,19 @@ body {
   padding-bottom: 15px;
   display: block;
   letter-spacing: 0.2em;
+}
+
+.navigation-link-user:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-user:active {
+  opacity: 0.3;
+}
+
+.navigation-link-user:focus {
+  outline: 1px solid #7B61FF;
+  opacity: 1;
 }
 
 /*Dropdown-menu*/
@@ -230,7 +256,7 @@ body {
 .dropdownbtn,
 .dropdownbtn-inner {
   position: relative;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -322,6 +348,18 @@ body {
   line-height: 18px;
 }
 
+.dropdown-menu-item:hover {
+  opacity: 0.6;
+}
+
+.dropdown-menu-item:active {
+  opacity: 0.3;
+}
+
+.dropdown-menu-item-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .dropdown-menu-item.reality {
   grid-area: reality;
 }
@@ -345,6 +383,20 @@ body {
 .dropdown-menu-item-link {
   color: #000000;
   text-decoration: none;
+}
+
+.dropdown-menu-item.selfi {
+  position: relative;
+}
+
+.dropdown-menu-item-link.current::before {
+  position: absolute;
+  content: " ";
+  width: 166px;
+  height: 1px;
+  background: #000000;
+  display: block;
+  top: 21px;;
 }
 
 .main-container {
@@ -480,7 +532,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   box-sizing: border-box;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   background: #FFFFFF;
 }
 
@@ -530,7 +582,7 @@ body {
 }
 
 .category-item-link:focus {
-  border: 1px dashed #7B61FF;
+  outline: 1px solid #7B61FF;
   border-radius: 5px;
 }
 
@@ -670,7 +722,7 @@ body {
 }
 
 .tooltip-link:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .tooltip-image:before {
@@ -867,7 +919,7 @@ body {
 }
 
 .button:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .button::after {
@@ -1321,6 +1373,7 @@ body {
 .product-card-title-link:focus-within {
   outline: 2px solid #AF4FFF;
 }
+
 .products-new + .image-wrap::before {
   position: absolute;
   background: url("../images/new-icon.svg");
