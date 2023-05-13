@@ -68,6 +68,18 @@ body {
   left: 60px;
 }
 
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.header-logo:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .navigation {
   width: 1040px;
   margin: 0;
@@ -1027,7 +1039,7 @@ body {
 }
 
 .footer-logo:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .footer-logo:active {
