@@ -408,7 +408,8 @@ body {
   height: 1px;
   background: #000000;
   display: block;
-  top: 21px;;
+  top: 21px;
+  ;
 }
 
 .main-container {
@@ -1235,7 +1236,38 @@ body {
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+
+}
+
+.breadcrumbs-item {
   margin-right: 36px;
+  position: relative;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.breadcrumbs-item:after {
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  content: "";
+  background: url("../images/breadcrumbs-arrow.svg") no-repeat center;
+  top: 13px;
+  right: -18px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 /*Catalog*/
