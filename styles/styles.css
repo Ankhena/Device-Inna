@@ -66,6 +66,7 @@ body {
   position: absolute;
   top: -20px;
   left: 60px;
+  display: inline-block;
 }
 
 .header-logo:hover {
@@ -1323,6 +1324,29 @@ body {
 .select-control {
   color: #000000;
   font-family: "Rubik", sans-serif;
+  appearance: none;
+  min-width: 141px;
+  background-image: url("../images/arrow-down.svg");
+  background-position-y: center;
+  background-position: right 12px;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  background-color: #F0F0F0;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
 }
 
 .sorting-container {
@@ -1337,6 +1361,21 @@ body {
 .sorting-button-container {
   width: 60px;
   height: 30px;
+  display: flex;
+}
+
+.sort-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.sort-up {
+  background: url(../images/triangle-up.svg) no-repeat center;
+}
+
+.sort-down {
+  background: url(../images/triangle-down.svg) no-repeat center;
 }
 
 /*Product-list*/
