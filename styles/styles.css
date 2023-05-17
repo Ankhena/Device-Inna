@@ -165,7 +165,26 @@ body {
 
 .navigation-item-person {
   min-width: 140px;
+}
+
+.navigation-link.person {
+  margin: 0;
   box-sizing: border-box;
+  display: inline-block;
+}
+
+.navigation-link.person::before {
+  background: url("../images/header/enter.svg") no-repeat center;
+  mask: url("../images/header/enter.svg") no-repeat center;
+  -webkit-mask: url("../images/header/enter.svg") no-repeat center;
+  content: "";
+  vertical-align: baseline;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  left: -22px;
+  top: 12px;
+  margin-right: 12px;
 }
 
 .navigation-link.compare {
