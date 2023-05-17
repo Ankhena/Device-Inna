@@ -269,6 +269,7 @@ body {
 .navigation-link-user.catalog {
   position: relative;
 }
+
 .navigation-link-user.catalog::after {
   position: absolute;
   outline: 2px solid #000000;
@@ -721,21 +722,27 @@ body {
 .tooltip-text {
   font-family: Raleway, sans-serif;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
   margin: 40px auto;
+  letter-spacing: 0.2em;
+}
 
+.tooltip {
+  margin: 0 auto;
+  width: 1160px;
+  margin-top: 70px;
+  display: flex;
 }
 
 .tooltip-link {
-  margin: 0 auto;
-  width: 1160px;
-  background-color: #F0F0F0;
-  margin-top: 70px;
-  display: flex;
   text-decoration: none;
+  margin: 0 auto;
+  position: relative;
+  width: inherit;
+  background-color: #F0F0F0;
 }
 
 .tooltip:active {
@@ -746,15 +753,18 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.tooltip-image::before {
+.tooltip-link::before {
+  position: absolute;
   content: "";
-  display: block;
   background: url("../images/track.svg") no-repeat #FFE17F center;
   width: 125px;
+  left: 0;
   height: 100px;
+  display: block;
+
 }
 
-.tooltip-image:hover::before {
+.tooltip-link:hover::before {
   background: url("../images/track.svg") no-repeat #FFC700 center;
 }
 
