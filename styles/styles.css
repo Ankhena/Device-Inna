@@ -770,17 +770,14 @@ body {
 
 .contacts {
   width: 532px;
-  position: relative;
 }
 
-.contacts::after {
-  position: absolute;
+.contacts::before {
   content: " ";
   width: 84px;
   height: 7px;
   background: #000000;
-  top: 0;
-  left: 0;
+  display: block;
 }
 
 .contacts-title {
@@ -832,17 +829,15 @@ body {
 .about-us {
   width: 520px;
   padding-bottom: 52px;
-  position: relative;
+
 }
 
-.about-us::after {
-  position: absolute;
+.about-us::before {
   content: " ";
   width: 84px;
   height: 7px;
   background: #000000;
-  top: 0;
-  left: 0;
+  display: block;
 }
 
 
