@@ -116,10 +116,26 @@ body {
   box-sizing: border-box;
 }
 
-.navigation-item-enter {
-  padding-right: 26px;
+.navigation-link.enter {
   min-width: 231px;
   box-sizing: border-box;
+  display: inline-block;
+}
+
+.navigation-item-enter {
+  padding-right: 26px;
+}
+
+.navigation-link.enter::before {
+  background: url("../images/header/enter.svg") no-repeat center;
+  mask: url("../images/header/enter.svg") no-repeat center;
+  -webkit-mask: url("../images/header/enter.svg") no-repeat center;
+  content: "";
+  vertical-align: baseline;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  margin-right: 12px;
 }
 
 .navigation-icon {
@@ -152,18 +168,67 @@ body {
   box-sizing: border-box;
 }
 
-.navigation-item-compare {
-  padding-right: 28px;
+.navigation-link.compare {
   margin: 0;
   box-sizing: border-box;
+  display: inline-block;
+}
+
+.navigation-item-compare {
+  padding-right: 18px;
+}
+
+.navigation-link.compare::before {
+  background: url("../images/header/compare.svg") no-repeat center;
+  mask: url("../images/header/compare.svg") no-repeat center;
+  -webkit-mask: url("../images/header/compare.svg") no-repeat center;
+  content: "";
+  vertical-align: baseline;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  left: -22px;
+  top: 12px;
+  margin-right: 12px;
+}
+
+.navigation-link.basket {
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.navigation-link.basket::before {
+  background: url("../images/header/cart.svg") no-repeat center;
+  mask: url("../images/header/cart.svg") no-repeat center;
+  -webkit-mask: url("../images/header/cart.svg") no-repeat center;
+  content: "";
+  vertical-align: baseline;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  left: 0;
+  top: 12px;
+  margin-right: 5px;
+}
+
+.navigation-item-basket {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .basket-counter {
-  position: relative;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
   text-align: center;
+  display: inline-block;
+  position: relative;
+  min-width: 21px;
+  z-index: 1;
+  margin-right: -3px;
 }
 
 .basket-counter::before {
@@ -173,11 +238,11 @@ body {
   border-radius: 50%;
   background-color: #FFFFFF;
   display: block;
-  left: -18px;
+  left: 0;
   text-align: center;
   align-items: center;
-  z-index: 1;
-  content: "2";
+  z-index: -2;
+  content: "";
   bottom: 0;
 }
 
@@ -591,7 +656,6 @@ body {
   background: #FFE17F;
   z-index: -2;
   display: block;
-
 }
 
 .category-item-link:hover::after {
@@ -761,7 +825,6 @@ body {
   left: 0;
   height: 100px;
   display: block;
-
 }
 
 .tooltip-link:hover::before {
@@ -839,7 +902,6 @@ body {
 .about-us {
   width: 520px;
   padding-bottom: 52px;
-
 }
 
 .about-us::before {
