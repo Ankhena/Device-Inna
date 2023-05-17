@@ -1281,23 +1281,22 @@ body {
   margin-top: -20px;
   width: 115px;
   height: 33px;
-}
-
-.htmlacademy-icon {
+  background: url("../images/htmlacademy-icon.svg") no-repeat center;
+  mask:url("../images/htmlacademy-icon.svg");
+  -webkit-mask:url("../images/htmlacademy-icon.svg");
   color: #FFC700;
 }
 
-.htmlacademy-icon:hover {
-  color: #FFFFFF;
+.htmlacademy-link:hover {
+  background-color: #FFFFFF;
 }
 
-.htmlacademy-icon:active {
+.htmlacademy-link:active {
   opacity: 0.3;
 }
 
 .htmlacademy-link:focus {
-  color: #FFC700;
-  outline: 2px solid #AF4FFF;
+  mask-border: 2px solid #AF4FFF;
 }
 
 /*Inner-page*/
