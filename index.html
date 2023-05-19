@@ -18,34 +18,64 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label for="search-text" class="visually-hidden">Введите текст.</label>
             <input type="text" id="search-text" placeholder="Поиск по сайту">
-            <button class="button" type="submit">Найти</button>
+            <button class="header-button" type="submit">Найти</button>
           </form>
           <ul class="navigation-list">
             <li class="navigation-item-enter">
-              <a class="navigation-link" href="#">Войти</a>
+              <a class="navigation-link enter" href="#">Войти
+              </a>
             </li>
             <li class="navigation-item-compare">
-              <a class="navigation-link" href="#">Сравнить</a>
+              <a class="navigation-link compare" href="#">
+                Сравнить</a>
             </li>
             <li class="navigation-item-basket">
-              <a class="navigation-link" href="#">Корзина</a>
+              <span class="basket-counter">2</span>
+              <a class="navigation-link basket" href="#">
+                Корзина</a>
             </li>
           </ul>
         </div>
         <div class="navigation-user-container">
-          <a class="navigation-link-user" href="catalog.html">Каталог товаров</a>
+
+          <div class="dropdown-wrapper">
+            <a class="navigation-link-user catalog" href="#">Каталог товаров</a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu-list">
+                <li class="dropdown-menu-item reality">
+                  <a class="dropdown-menu-item-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="dropdown-menu-item selfi">
+                  <a class="dropdown-menu-item-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="dropdown-menu-item camera">
+                  <a class="dropdown-menu-item-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="dropdown-menu-item fitness">
+                  <a class="dropdown-menu-item-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown-menu-item watch">
+                  <a class="dropdown-menu-item-link" href="#">Умные часы</a>
+                </li>
+                <li class="dropdown-menu-item quadcopter">
+                  <a class="dropdown-menu-item-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="navigation-user">
-            <li>
-              <a class="navigation-link-user" href="#">Доставка</a>
+            <li class="navigation-user-item">
+              <a class="navigation-link-user current" href="#">Доставка</a>
             </li>
-            <li>
+            <li class="navigation-user-item">
               <a class="navigation-link-user" href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="navigation-user-item">
               <a class="navigation-link-user" href="#">Контакты</a>
             </li>
           </ul>
         </div>
+
       </nav>
     </header>
 
@@ -111,36 +141,44 @@
         <h2 class="visually-hidden">Категории каталога.</h2>
         <ul class="category-list">
           <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-1.svg" width="97" height="55"
-              alt="Очки виртуальной реальности.">
-            <a class="category-item-link" href="#">Виртуальная
-              реальность</a>
+            <a class="category-item-link" href="#">
+              <div class="category-image"
+                style="--bgi: url(../images/index-catalog/index-catalog-1.svg); top: 53px; left: 132px;"></div>
+              <div class="category-item-description">Виртуальная
+                реальность</div>
+            </a>
+          </li>
+
+          <li class="category-list-item">
+            <a class="category-item-link" href="#">
+              <div class="category-image" style="--bgi: url(../images/index-catalog/index-catalog-2.svg)"></div>
+              <div class="category-item-description">Моноподы для селфи
+              </div>
+            </a>
+          </li>
+
+          <li class="category-list-item">
+            <a class="category-item-link" href="#">
+              <div class="category-image" style="--bgi: url(../images/index-catalog/index-catalog-3.svg)"></div>
+              <div class="category-item-description">Экшн-камеры</div>
+            </a>
+          <li class="category-list-item">
+            <a class="category-item-link" href="#">
+              <div class="category-image" style="--bgi: url(../images/index-catalog/index-catalog-4.svg)"></div>
+              <div class="category-item-description">Фитнес-браслеты</div>
+            </a>
           </li>
           <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-2.svg" width="87" height="117"
-              alt="Моноподы.">
-            <a class="category-item-link" href="#">Моноподы
-              для селфи</a>
+            <a class="category-item-link" href="#">
+              <div class="category-image" style="--bgi: url(../images/index-catalog/index-catalog-5.svg)"></div>
+              <div class="category-item-description">Умные часы</div>
+            </a>
           </li>
           <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-3.svg" width="72" height="87"
-              alt="Экшн-камеры">
-            <a class="category-item-link" href="#">Экшн-камеры</a>
-          </li>
-          <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-4.svg" width="108" height="66"
-              alt="Фитнес-браслеты.">
-            <a class="category-item-link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-5.svg" width="57" height="98"
-              alt="Умные часы.">
-            <a class="category-item-link" href="#">Умные часы</a>
-          </li>
-          <li class="category-list-item">
-            <img class="image-category" src="images/index-catalog/index-catalog-6.svg" width="133" height="70"
-              alt="Квадрокоптеры.">
-            <a class="category-item-link" href="#">Квадрокоптеры</a>
+            <a class="category-item-link" href="#">
+              <div class="category-image" style="--bgi: url(../images/index-catalog/index-catalog-6.svg)"></div>
+              <div class="category-item-description">Квадрокоптеры</div>
+            </a>
           </li>
         </ul>
       </section>
@@ -167,14 +205,26 @@
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <img class="delivery-image" src="images/delivery.svg" width="136" height="165" alt="Доставка.">
           </ul>
         </div>
       </section>
 
       <section class="tooltip">
-        <h2 class="visually-hidden">Тултип.</h2>
-        <p class="tooltip-text">Доставим редкий товар под заказ</p>
+        <a class="tooltip-link" href="#">
+          <h2 class="visually-hidden">Тултип.</h2>
+          <p class="tooltip-text">Доставим редкий товар под заказ</p>
+            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="currentColor"
+              viewBox="0 0 2 12">
+              <g fill="currentColor" clip-path="url(#a)" opacity="1">
+                <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h2v12H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+        </a>
       </section>
 
       <div class="contacts-container">
@@ -218,10 +268,10 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">Email.</label>
-          <input type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
-          <p class="free">Это бесплатно</p>
+          <label class="visually-hidden newsletter-email" for="newsletter-email">Email.</label>
+          <input class="field" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail">
+          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <p class="newsletter-form-text">Это бесплатно</p>
         </form>
       </section>
     </main>
@@ -229,7 +279,7 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <a class="footer-logo" href="index.html" aria-current="page">
-          <img class="logo footer-logo-image" src="images/logo.svg" width="145" height="36"
+          <img class="logo footer-logo-image" src="images/footer-logo.svg" width="145" height="36"
             alt="Логотип Интернет-магазина «Девайс».">
         </a>
 
@@ -260,25 +310,26 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-telegram" href="#">
                 <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-youtube" href="#">
                 <span class="visually-hidden">Youtube.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-tw" href="#">
                 <span class="visually-hidden">Твитер.</span>
               </a>
             </li>
           </ul>
         </section>
 
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">.html academy</span>
+        </a>
       </div>
     </footer>
 
