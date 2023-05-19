@@ -983,6 +983,47 @@ body {
   margin: 0 auto;
   width: 1160px;
   padding-top: 144px;
+  position: relative;
+}
+
+.field {
+  width: 557px;
+  border: none;
+  background-color: #F0F0F0;
+
+}
+
+.newsletter-form::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 557px;
+  background-color: #C4C4C4;
+  display: block;
+  bottom: 0;
+}
+
+
+.newsletter-button {
+  width: 253px;
+  letter-spacing: 0.2em;
+  border: 3px solid #C4C4C4;
+}
+
+.newsletter-form-text {
+  flex-grow: 1;
+  text-align: end;
+  position: relative;
+}
+
+.newsletter-form-text::before {
+  position: absolute;
+  content: "";
+  background: url("../images/tick-big\ 1.svg") no-repeat center;
+  width: 14px;
+  height: 14px;
+  right: 158px;
+  top: 7px;
 }
 
 .button {
