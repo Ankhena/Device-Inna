@@ -765,6 +765,7 @@ body {
   text-align: center;
   margin: 40px auto;
   letter-spacing: 0.2em;
+  padding-left: 125px;
 }
 
 .tooltip {
@@ -780,6 +781,7 @@ body {
   position: relative;
   width: inherit;
   background-color: #F0F0F0;
+  display: flex;
 }
 
 .tooltip:active {
@@ -802,6 +804,24 @@ body {
 
 .tooltip-link:hover::before {
   background: url("../images/track.svg") no-repeat #FFC700 center;
+}
+
+.tooltip-icon:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.tooltip-icon {
+  width: 3px;
+  height: 12px;
+  display: block;
+  padding: 14px 18px;
+  background: rgba(220, 220, 220, 0.5) 30px 40px no-repeat;
+  border-radius: 50%;
+  opacity: 0.3;
+  border: none;
+  margin: 30px 42px;
+
 }
 
 /*Contacts*/
