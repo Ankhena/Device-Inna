@@ -96,15 +96,73 @@ body {
 
 .form-container {
   display: flex;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 60px;
   width: 1040px;
 }
 
 .search-form {
   width: 517px;
-  padding-right: 26px;
+  margin-right: 26px;
+  display: flex;
+  position: relative;
 }
+
+.search-form-label {
+  display: flex;
+}
+
+.search-form-field {
+  width: 359px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 48px;
+  background-color: #FFE17F;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  color: #000000;
+  outline: none;
+}
+
+.search-form::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url("../images/header/search.svg");
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: 12px;
+}
+
+.header-button {
+  flex-grow: 1;
+  background-color: #FFE17F;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000000;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/*Focus*/
+
+.search-form-label:focus-within::before {
+  position: absolute;
+  content: "";
+  width: 362px;
+  height: 42px;
+  display: block;
+  left: -2px;
+  top: -2px;
+  border: 2px solid #AF4FFF;
+}
+
+
+
 
 .navigation-list {
   display: flex;
@@ -1283,9 +1341,8 @@ body {
 .htmlacademy-link::before {
   width: 115px;
   height: 33px;
-  background: #FFC700 no-repeat center;
+  background: #FFC700;
   -webkit-mask: url("../images/htmlacademy-icon.svg") no-repeat;
-  ;
   mask: url("../images/htmlacademy-icon.svg") no-repeat;
   content: "";
   display: inline-block;
