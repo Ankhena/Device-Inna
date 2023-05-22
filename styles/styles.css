@@ -1488,6 +1488,7 @@ body {
   width: 320px;
   padding-left: 60px;
   padding-right: 60px;
+  line-height: 20px;
 }
 
 .filter-title {
@@ -1502,8 +1503,8 @@ body {
 }
 
 .catalog-filter-group {
-  margin-top: 35px;
   margin: 0;
+  margin-top: 35px;
   padding: 0;
   border: none;
 }
@@ -1511,7 +1512,7 @@ body {
 .catalog-filter-group-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  padding: 0;
   padding-top: 12px;
   padding-bottom: 20px;
 }
@@ -1588,13 +1589,12 @@ body {
 
 .range-input.min {
   width: 30px;
+  padding-right: 68px;
 }
-
 
 .range-input.max {
   width: 71px;
 }
-
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1602,10 +1602,76 @@ body {
   margin: 0;
 }
 
-.catalog-filter-group {
+/* Control */
+.control {
+  position: relative;
+  display: block;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  position: absolute;
+  background: url("../images/form-tick.svg") no-repeat center;
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  left: 4px;
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-label {
+  padding-left: 36px;
+}
+
+.catalog-filter-list {
   margin: 0;
   padding: 0;
-  border: none;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.catalog-filter-item.bluetooth:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .button-show {
@@ -1613,7 +1679,19 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: 800;
+  text-decoration: none;
+  min-width: 160px;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  z-index: 0;
+  outline: none;
+  border: none;
+  margin-top: 35px;
 }
+
 
 /*Sorting*/
 
