@@ -119,8 +119,33 @@
           <div class="filter-container">
             <h2 class="visually-hidden" hidden>Фильтр и список товаров.</h2>
             <h3 class="filter-title">Фильтр:</h3>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-group-title">Стоимость</legend>
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="width:119px; left:5px;">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input max" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-group-title">Цвет</legend>
                 <label class="control">
