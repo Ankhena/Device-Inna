@@ -105,11 +105,12 @@ body {
   width: 517px;
   margin-right: 26px;
   display: flex;
-  position: relative;
+
 }
 
 .search-form-label {
   display: flex;
+  position: relative;
 }
 
 .search-form-field {
@@ -126,15 +127,35 @@ body {
   outline: none;
 }
 
-.search-form::after {
+.search-form-icon {
   position: absolute;
-  content: "";
-  display: block;
-  background: url("../images/header/search.svg");
-  width: 16px;
-  height: 16px;
   left: 16px;
   top: 12px;
+}
+
+/*Focus*/
+.search-form-label:focus-within::before {
+  position: absolute;
+  content: "";
+  width: 362px;
+  height: 42px;
+  display: block;
+  left: -2px;
+  top: -2px;
+  border: 2px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+/*Placeholder*/
+.search-form-field::placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
+/*Disabled*/
+.search-form-field:disabled,
+.search-form-field:disabled + .search-form-icon {
+  opacity: 0.3;
 }
 
 .header-button {
@@ -146,23 +167,38 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  position: relative;
+}
+
+/*Hover*/
+.header-button:hover {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+/*Active*/
+.header-button:active {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 /*Focus*/
-
-.search-form-label:focus-within::before {
+.header-button:focus::after {
   position: absolute;
   content: "";
-  width: 362px;
-  height: 42px;
+  width: 158px;
+  height: 40px;
   display: block;
   left: -2px;
   top: -2px;
   border: 2px solid #AF4FFF;
+  box-sizing: border-box;
 }
 
-
-
+/*Disabled*/
+.header-button:disabled {
+  opacity: 0.3;
+}
 
 .navigation-list {
   display: flex;
