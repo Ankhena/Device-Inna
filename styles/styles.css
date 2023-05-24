@@ -2012,6 +2012,11 @@ body {
   background-color: #000000;
   min-height: 201px;
   line-height: 20px;
+  display: none;
+}
+
+.popover-open {
+  display: block;
 }
 
 .popover:before {
