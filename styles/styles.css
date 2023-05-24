@@ -333,6 +333,7 @@ body {
   flex-direction: row;
   margin: 0 auto;
   align-items: center;
+  position: relative;
 }
 
 .basket-counter {
@@ -1624,8 +1625,7 @@ body {
   border: 2px solid #000000;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
   background: url("../images/form-tick.svg") no-repeat center;
@@ -1642,13 +1642,43 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 30%;
+  left: 30%;
   width: 8px;
   height: 8px;
   background-color: #242424;
   border-radius: 50%;
   content: "";
+}
+
+/*Focus*/
+.control-input:focus + .control-mark::after {
+  outline: 2px solid #AF4FFF;
+  offset: 2px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 24px;
+  height: 24px;
+  content: "";
+}
+
+/*Hover*/
+.control:hover {
+  opacity: 0.6;
+}
+
+/*Active*/
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .control-mark::before {
+  opacity: 0.1;
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 0.1;
 }
 
 .control-input[type="radio"]:checked + .control-mark {
@@ -1967,4 +1997,108 @@ body {
 
 .pagination-current {
   opacity: 0.6;
+}
+
+.popover {
+  position: absolute;
+  top: 40px;
+  right: -80px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  min-height: 201px;
+  line-height: 20px;
+}
+
+.popover:before {
+  content: "";
+  top: -6px;
+  left: 160px;
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  background: url("../images/popover-triangle.svg");
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 39px 185px 10px;
+  column-gap: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cart-item-title {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 151px;
+  font: inherit;
+}
+
+.cart-items-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cart-item-close-button {
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+  background: url("../images/popover-cross.svg") no-repeat center;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+}
+
+
+.cart-item + .cart-item {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.popover-products-wrapper {
+  display: flex;
+  font-size: 16px;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
+  margin-top: 23px;
+  background: #1A1A1A;
+  align-items: center;
+}
+
+.popover-price {
+  margin: 0;
+  padding: 0;
+}
+
+.popover-open-button {
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
