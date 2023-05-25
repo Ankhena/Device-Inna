@@ -380,7 +380,51 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-order">
 
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="person-info">
+              <label class="person-info-label" for="order-name">Ваше имя:
+                <input class="order-form-name-field" type="text" id="order-name" name="order-name"
+                  placeholder="Введите имя">
+              </label>
+              <label class="person-info-label" for="order-e-mail">Ваш e-mail:
+                <input class="order-form-e-mail-field" type="text" id="order-e-mail" name="order-e-mail"
+                  placeholder="почта">
+                <span class="order-form-comment">Забавный у вас адрес</span>
+              </label>
+            </p>
+            <div class="order-info-wrapper">
+              <div class="desc-wrapper">
+                <label class="order-form-label" for="order-desc">Что нужно привезти:
+                </label>
+                <input class="order-form-desс-field" type="text" id="order-desc" name="order-desc"
+                  placeholder="В свободной форме">
+              </div>
+              <div class="qty-wrapper">
+                <label class="order-form-label" for="order-qty">Количество:
+                </label>
+                <div class="plus-minus-wrapper">
+                  <button class="order-form-button-minus" type="submit">
+                    <span class="visually-hidden">Минус.</span>
+                  </button>
+                  <input class="order-form-qty-field" type="text" id="order-qty" name="order-qty" value="1">
+                  <button class="order-form-button-plus" type="submit">
+                    <span class="visually-hidden">Плюс.</span></button>
+                </div>
+              </div>
+            </div>
+            <button class="order-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 
