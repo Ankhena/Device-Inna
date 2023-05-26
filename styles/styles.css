@@ -2120,7 +2120,6 @@ body {
 }
 
 .modal {
-  position: relative;
   margin: auto;
   padding: 72px 80px;
   background-color: #ffffff;
@@ -2130,10 +2129,14 @@ body {
   width: 760px;
 }
 
+.modal-content {
+  position: relative;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
+  top: 12px;
   right: 0;
   width: 26px;
   height: 26px;
@@ -2145,6 +2148,23 @@ body {
   cursor: pointer;
 }
 
+/*Hover*/
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+/*Active*/
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+/*Focus*/
+.modal-close-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;;
+}
+
+
 .modal-title {
   margin: 0;
   margin-bottom: 24px;
@@ -2155,41 +2175,116 @@ body {
   color: #000000;
 }
 
-.person-info-label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+.order-form {
+  display: grid;
+  grid-template-columns: 360px 140px 180px;
+  column-gap: 40px;
+  row-gap: 42px;
+}
+
+.order-form-label.name {
+  grid-column: 1/2;
   display: flex;
   flex-direction: column;
 }
 
-.order-form-comment {
-  font-size: 14px;
-  color: #FF3D3D;
+.order-form-label.e-mail {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column;
 }
 
-.person-info {
-  display: grid;
-  grid-template-columns: 360px 360px;
-  column-gap: 40px;
+.order-form-label.desc {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
 }
 
-.order-info-wrapper {
-  display: grid;
-  grid-template-columns: 540px 180px;
-  column-gap: 40px;
+.q-ty-wrapper {
+  grid-column: 3/4;
+  line-height: 20px;
 }
 
-
+.order-form-button {
+  grid-column: 1/4;
+}
 
 .plus-minus-wrapper {
   display: flex;
+  margin-top: 14px;
 }
 
-.desc-wrapper, .qty-wrapper {
-  display: flex;
-  flex-direction: column;
+.order-form-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  position: relative;
+}
+
+.order-form-label.name::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: url("../images/modal/modal-person.svg") no-repeat center;
+  top: 57px;
+  right: 24px;
+}
+
+.order-form-label.e-mail::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: url("../images/modal/modal-mail.svg") no-repeat center;
+  top: 57px;
+  right: 24px;
+}
+
+.order-form-field.e-mail::placeholder {
+  color: #000000;
+}
+
+.field-comment {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.e-mail-comment {
+  color: #FF3D3D;
+}
+
+.order-form-field {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px;
+  background: #F0F0F0;
+  border: none;
+  margin-top: 14px;
+}
+
+.order-form-button {
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  border: none;
+}
+
+.order-form-field.qty {
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.button-order {
+  margin-top: 42px;
+  border: 0;
+  background: #FFFFFF;
+  z-index: 0;
 }
