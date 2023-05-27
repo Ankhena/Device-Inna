@@ -781,7 +781,7 @@ body {
   width: 1160px;
   display: flex;
   position: relative;
-  top: -102px;
+  top: -106px;
 }
 
 .services-container::after {
@@ -816,19 +816,26 @@ body {
   padding: 0;
   margin-right: 63px;
   width: 694px;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.delivery {
+.tabs-list-item {
   width: 452px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: none;
 }
 
-.delivery-title {
-  font-family: Raleway, sans-serif;
+.tabs-list-item.current {
+  display: block;
+}
+
+.tabs-list-title {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -837,25 +844,34 @@ body {
   padding-bottom: 34px;
 }
 
-.delivery-text {
+.tabs-list-text {
   margin: 0;
   padding: 0;
 }
 
-.delivery::after {
+.tabs-list-item::after{
   content: " ";
-  background: url(../images/delivery.svg);
-  width: 136px;
-  height: 165px;
-  display: block;
   bottom: 78px;
   right: 63px;
   position: absolute;
 }
 
-.services-tabs {
-  display: flex;
-  justify-content: space-between;
+.tabs-list-item.delivery::after{
+  background: url(../images/delivery.svg);
+  width: 136px;
+  height: 164px;
+}
+
+.tabs-list-item.warranty::after{
+  background: url(../images/warranty.svg);
+  width: 171px;
+  height: 195px;
+}
+
+.tabs-list-item.credit::after{
+  background: url(../images/credit.svg);
+  width: 156px;
+  height: 188px;
 }
 
 /*Tooltip*/
@@ -1131,7 +1147,7 @@ body {
 }
 
 .button {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
@@ -1169,22 +1185,16 @@ body {
 }
 
 .button-link {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
   min-width: 160px;
-  text-align: center;
   display: block;
-  padding: 10px;
+  padding: 11px;
   margin: 0;
   z-index: 0;
+  width: 160px;
 }
 
 .services-button-active {
-  line-height: 21px;
-  text-transform: uppercase;
   color: #FFE17F;
   width: 160px;
 }
@@ -1209,7 +1219,7 @@ body {
   left: 0;
   z-index: -1;
   background: #000000;
-  margin-top: -10px;
+
 }
 
 /*Page-footer*/
