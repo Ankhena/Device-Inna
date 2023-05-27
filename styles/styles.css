@@ -569,6 +569,14 @@ body {
 
 .slide {
   display: flex;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  opacity: 0;
+}
+
+.slide.current {
+  opacity: 1;
 }
 
 .slide-figure {
@@ -577,9 +585,11 @@ body {
 }
 
 .slider-wrapper {
-  position: relative;
   width: 1160px;
   margin: 0 auto;
+  display: grid;
+  counter-reset: my-counter;
+  position: relative;
 }
 
 .slider-button {
@@ -624,10 +634,6 @@ body {
   color: #FFFFFF;
   width: 250px;
   height: 135px;
-}
-
-.slide-hero {
-  counter-reset: my-counter;
 }
 
 .hero-title {
@@ -1415,7 +1421,7 @@ body {
 }
 
 .inner-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -2162,7 +2168,8 @@ body {
 /*Focus*/
 .modal-close-button:focus {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;;
+  outline-offset: 2px;
+  ;
 }
 
 .modal-title {
@@ -2301,9 +2308,10 @@ body {
   margin-left: 8px;
 
 }
+
 .modal-tooltip-toggle {
   border: none;
-  background-color:#FFE17F;
+  background-color: #FFE17F;
   border-radius: 50%;
   padding: 7px;
   margin: 0;
@@ -2348,13 +2356,13 @@ body {
 }
 
 .modal-tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../images/modal/modal-info-arrow.svg");
   width: 14px;
   height: 6px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  right:0;
+  right: 0;
   left: 65px;
   margin-left: auto;
   margin-right: auto;
