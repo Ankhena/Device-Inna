@@ -1526,6 +1526,17 @@ body {
   margin-top: 35px;
   padding: 0;
   border: none;
+  position: relative;
+}
+
+.catalog-filter-group-title::before {
+position: absolute;
+content: "";
+width: 200px;
+height: 2px;
+top: 0;
+display: block;
+background-color: #000000;
 }
 
 .catalog-filter-group-title {
