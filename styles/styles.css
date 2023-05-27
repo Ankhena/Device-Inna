@@ -1186,32 +1186,34 @@ body {
 
 .button-link {
   text-decoration: none;
-  min-width: 160px;
   display: block;
   padding: 11px;
   margin: 0;
   z-index: 0;
-  width: 160px;
 }
 
-.services-button-active {
+.services-button{
+  width: 153px;
+}
+
+.services-button.active {
   color: #FFE17F;
   width: 160px;
 }
 
-.services-button-active:hover {
+.services-button.active:hover {
   width: 74%;
 }
 
-.services-button-active:active {
+.services-button.active:active {
   width: 74%;
 }
 
-.services-button-active:focus {
+.services-button.active:focus {
   width: 74%;
 }
 
-.services-button-active::after {
+.services-button.active::after {
   position: absolute;
   content: " ";
   width: 280px;
