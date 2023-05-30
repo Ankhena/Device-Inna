@@ -17,6 +17,7 @@
         <div class="form-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label for="search-form-field" class="search-form-label">
+              <span class="visually-hidden">Поиск.</span>
               <input class="search-form-field" type="text" id="search-form-field" placeholder="Поиск по сайту">
               <svg class="search-form-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" viewBox="0 0 16 16">
@@ -43,9 +44,10 @@
                 Сравнить</a>
             </li>
             <li class="navigation-item-basket">
-              <span class="basket-counter">2</span>
               <a class="navigation-link basket" href="#">
+                <span class="basket-counter">2</span>
                 Корзина</a>
+                </li>
               <div class="popover popover-cart">
 
                 <div class="popover-content">
@@ -94,7 +96,7 @@
                   <a class="dropdown-menu-item-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="dropdown-menu-item selfi">
-                  <a class="dropdown-menu-item-link" href="#">Моноподы для cелфи</a>
+                  <a class="dropdown-menu-item-link" href="catalog.html">Моноподы для cелфи</a>
                 </li>
                 <li class="dropdown-menu-item camera">
                   <a class="dropdown-menu-item-link" href="#">Экшн-камеры</a>
@@ -131,7 +133,7 @@
       <h1 class="visually-hidden">Интернет-магазин "Девайс".</h1>
 
       <div class="slider-wrapper">
-        <section class="slide">
+        <section class="slide current">
           <div class="slide-figure">
             <h2 class="visually-hidden">Квадрокоптер.</h2>
             <img class="slide-image" src="images/slider/quadcopter.png" width="560" height="560" alt="Квадрокоптер.">
@@ -211,7 +213,7 @@
           </div>
         </section>
 
-        <section class="slide current">
+        <section class="slide ">
           <div class="slide-figure">
             <h2 class="visually-hidden">Палка для селфи.</h2>
             <img class="slide-image" src="images/slider/selfi-stick.png" width="560" height="560"
@@ -219,7 +221,7 @@
           </div>
 
           <div class="slide-hero">
-            <p class="hero-title">Делай селфи,
+            <p class="hero-title">Делай селфи,<br>
               как Бен Стиллер!</p>
             <p class="hero-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
               длиной и весом всего 5 кг.
@@ -249,7 +251,7 @@
           <li class="category-list-item">
             <a class="category-item-link" href="#">
               <div class="category-image"
-                style="--bgi: url(../images/index-catalog/index-catalog-1.svg); top: 53px; left: 132px;"></div>
+                style="--bgi: url(../images/index-catalog/index-catalog-1.svg)"></div>
               <div class="category-item-description">Виртуальная
                 реальность</div>
             </a>
@@ -319,23 +321,24 @@
             </li>
             <li class="tabs-list-item credit ">
               <h3 class="tabs-list-title">Кредит</h3>
-              <p class="tabs-list-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <p class="tabs-list-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="tooltip">
+        <h2 class="visually-hidden">Товар под заказ.</h2>
         <a class="tooltip-link" href="#">
-          <h2 class="visually-hidden">Тултип.</h2>
           <p class="tooltip-text">Доставим редкий товар под заказ</p>
           <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="currentColor"
             viewBox="0 0 2 12">
-            <g fill="currentColor" clip-path="url(#a)" opacity="1">
+            <g fill="currentColor" clip-path="url(#b)" opacity="1">
               <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
             </g>
             <defs>
-              <clipPath id="a">
+              <clipPath id="b">
                 <path fill="#fff" d="M0 0h2v12H0z" />
               </clipPath>
             </defs>
@@ -454,9 +457,7 @@
 
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+
           <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <label class="order-form-label name" for="order-name">Ваше имя:
@@ -473,11 +474,9 @@
             <label class="order-form-label desc" for="order-desc">Что нужно привезти:
               <input class="order-form-field desc" type="text" id="order-desc" name="order-desc"
                 placeholder="В свободной форме"></label>
-            <div class="q-ty-wrapper">
-              <span class="order-form-label q-ty">
-                <label class="order-form-label q-ty order-form-label-icon" for="order-qty">Количество:
-                </label>
-                <span class="modal-tooltip">
+            <div class="quantity-wrapper">
+              <div class="order-form-label quantity">
+                <div class="modal-tooltip">
 
                   <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"><svg
                       class="modal-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="12" fill="none"
@@ -485,29 +484,33 @@
                       <path fill="currentColor" d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z" />
                     </svg>
                   </button>
-                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько
+                  <div class="modal-tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько
                     нужно. Привезём сколько получится по требованиям
-                    к провозу багажа.</span>
-                </span>
-              </span>
+                    к провозу багажа.</div>
+                </div>
+              </div>
+              <label class="order-form-label quantity order-form-label-icon" for="order-quantity">Количество:
+              </label>
+
               <div class="plus-minus-wrapper">
 
-                <button class="order-form-button minus" type="submit">
+                <button class="order-form-button minus" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                     <path fill="currentColor" d="M16 7H0v2h16V7Z" />
                   </svg>
 
                   <span class="visually-hidden">Минус.</span>
                 </button>
-                <input class="order-form-field qty" type="text" id="order-qty" name="order-qty" value="1">
-                <button class="order-form-button plus" type="submit">
+                <input class="order-form-field quantity" type="text" id="order-quantity" name="order-quantity"
+                  value="1">
+                <button class="order-form-button plus" type="button">
                   <svg class="order-image" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                     viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                    <g clip-path="url(#c)">
                       <path fill="currentColor" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="c">
                         <path fill="#fff" d="M0 0h16v16H0z" />
                       </clipPath>
                     </defs>
@@ -520,7 +523,11 @@
 
           </form>
           <button class="button button-order" type="submit">Отправить</button>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </section>
+
       </div>
     </div>
 
