@@ -1016,7 +1016,7 @@ body {
 }
 
 .about-us-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -1572,8 +1572,15 @@ body {
   opacity: 1;
 }
 
-.range-toggle:focus {
-  border: 3px solid #dbb590;
+.range-toggle:focus::after {
+  outline: 2px solid #AF4FFF;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  display: block;
+  top: -3px;
+  left: -3px;
 }
 
 .toggle-max {
@@ -1596,6 +1603,7 @@ body {
   margin-left: -8px;
 }
 
+
 .range-input {
   padding: 0 2px;
   font: inherit;
@@ -1605,11 +1613,37 @@ body {
   appearance: textfield;
   outline: none;
   opacity: 0.3;
+  position: relative;
 }
 
 .range-input.min {
   width: 30px;
   padding-right: 68px;
+
+}
+
+.range-input.min:focus + .range-input-min-mark::before {
+  outline: 2px solid #AF4FFF;
+  position: absolute;
+  min-width: 54px;
+  height: 18px;
+  content: "";
+  display: block;
+  left: -8px;
+  opacity: 1;
+  bottom: 1px;
+}
+
+.range-input.max:focus + .range-input-max-mark::before {
+  outline: 2px solid #AF4FFF;
+  position: absolute;
+  width: 94px;
+  height: 18px;
+  content: "";
+  display: block;
+  right: 38px;
+  opacity: 1;
+  bottom: 1px;
 }
 
 .range-input.max {
