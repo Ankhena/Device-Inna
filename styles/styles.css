@@ -1865,11 +1865,15 @@ body {
 
 .product-card-image {
   display: block;
-
 }
 
 .product-card-image:hover,
 .product-card-image:active {
+  background: rgba(240, 240, 240, 0.8);
+}
+
+.product-card-title-wrap:hover,
+.product-card-title-wrap:active {
   opacity: 0.6;
 }
 
