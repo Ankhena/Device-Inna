@@ -1657,10 +1657,6 @@ body {
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
-  left: 30%;
-  right: 30%;
-  top: 30%;
-  bottom: 30%;
   width: 8px;
   height: 8px;
   background: #000000 center;
@@ -1668,6 +1664,10 @@ body {
   content: "";
   display: block;
   position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 6px;
+  bottom: 6px;
 }
 
 /*Focus*/
