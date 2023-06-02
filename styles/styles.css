@@ -2086,9 +2086,8 @@ body {
 
 .popover {
   position: absolute;
-  top: 40px;
-  right: -80px;
-  z-index: 2;
+  right: 0;
+  z-index: 3;
   box-sizing: border-box;
   width: 320px;
   padding-top: 20px;
@@ -2099,6 +2098,7 @@ body {
   line-height: 20px;
   display: none;
 }
+
 
 .popover-open {
   display: block;
@@ -2119,20 +2119,19 @@ body {
 }
 
 .cart-item {
-  display: grid;
-  grid-template-columns: 39px 185px 10px;
-  column-gap: 23px;
+  display: flex;
+  justify-content: space-between;
   padding-right: 20px;
   padding-left: 20px;
-  position: relative;
 }
 
 .cart-item-title {
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 151px;
   font: inherit;
+  padding-left: 23px;
+
 }
 
 .cart-items-list {
@@ -2144,20 +2143,77 @@ body {
 .cart-item-close-button {
   width: 10px;
   height: 10px;
-  top: 0;
-  right: 0;
-  background: url("../images/popover-cross.svg") no-repeat center;
+  background: url("../images/popover-cross.svg") no-repeat;
   box-sizing: border-box;
   border: none;
   padding: 0;
 }
-
 
 .cart-item + .cart-item {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.cart-item-link {
+  width: 250px;
+  display: flex;
+  z-index: 3;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*Focus*/
+.cart-item-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+/*Hover*/
+.cart-item-link:hover {
+  opacity: 0.6;
+}
+
+/*Active*/
+.category-item-link:active {
+  opacity: 0.3;
+}
+
+/*Focus*/
+.cart-item-close-button:focus {
+  outline: 2px solid #AF4FFF;
+  offset: 2px;
+}
+/*Hover*/
+.cart-item-close-button:hover {
+  opacity: 0.6;
+}
+
+/*Active*/
+.cart-item-close-button:active {
+  opacity: 0.3;
+}
+
+/*Disabled*/
+.popover-open-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*Focus*/
+.popover-open-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+/*Hover*/
+.popover-open-button:hover {
+  background: rgba(255,225,122, 1);
+}
+
+/*Active*/
+.popover-open-button:active {
+  color:rgba(0, 0, 0, 0.3);
+  background: rgba(255,225,122, 1);
+}
+
 
 .popover-products-wrapper {
   display: flex;
@@ -2191,6 +2247,8 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 20px;
+  text-transform: uppercase;
+  background: #FFFFFF;
 }
 
 /*Modal*/
