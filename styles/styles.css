@@ -598,7 +598,7 @@ body {
 
 /*Focus*/
 .slider-button:focus {
-outline: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 /*Active*/
@@ -667,7 +667,6 @@ outline: 2px solid #AF4FFF;
 }
 
 /*Slider-pagination*/
-
 .slider-pagination {
   margin: 0;
   padding: 0;
@@ -678,6 +677,7 @@ outline: 2px solid #AF4FFF;
   position: relative;
   left: 20px;
   margin-top: -26px;
+  z-index: 1;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -696,14 +696,40 @@ outline: 2px solid #AF4FFF;
   box-sizing: border-box;
   border: 2px solid #000000;
   background: #FFFFFF;
+  position: relative;
 }
 
 .slider-pagination-button-current {
   background-color: #000000;
 }
 
-/*Categories*/
+/*Hover*/
+.slider-pagination-button:hover,
+.slider-pagination-button-current:hover {
+  opacity: 0.6;
+}
 
+/*Focus*/
+.slider-pagination-button:focus::after {
+  outline: 2px solid #AF4FFF;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -4px;
+  left: -4px;
+}
+
+/*Active*/
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button-current:active {
+  opacity: 0.3;
+}
+
+/*Categories*/
 .catalog-category {
   width: 1160px;
   margin: 0 auto;
