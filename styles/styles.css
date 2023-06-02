@@ -481,10 +481,8 @@ body {
 
 .dropdown-menu-list {
   display: grid;
-  grid-template-areas: "reality fitness quadcopter"
-    "selfi watch watch"
-    "camera camera camera";
   grid-template-columns: 252px 211px 636px;
+  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -512,33 +510,21 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.dropdown-menu-item.reality {
-  grid-area: reality;
+.dropdown-menu-item.item-1 {
+  grid-column: 1;
 }
 
-.dropdown-menu-item.fitness {
-  grid-area: fitness;
+.dropdown-menu-item.item-2 {
+  grid-column: 2;
 }
 
-.dropdown-menu-item.quadcopter {
-  grid-area: quadcopter;
-}
-
-.dropdown-menu-item.selfi {
-  grid-area: selfi;
-}
-
-.dropdown-menu-item.camera {
-  grid-area: camera;
+.dropdown-menu-item.item-3 {
+  grid-column: 3;
 }
 
 .dropdown-menu-item-link {
   color: #000000;
   text-decoration: none;
-}
-
-.dropdown-menu-item.selfi {
-  position: relative;
 }
 
 .dropdown-menu-item-link.current::before {
@@ -568,10 +554,12 @@ body {
   grid-column: 1/2;
   grid-row: 1/2;
   opacity: 0;
+
 }
 
 .slide.current {
   opacity: 1;
+  z-index: 1;
 }
 
 .slide-figure {
@@ -603,6 +591,21 @@ body {
   transform: rotate(180deg);
 }
 
+/*Hover*/
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+/*Focus*/
+.slider-button:focus {
+outline: 2px solid #AF4FFF;
+}
+
+/*Active*/
+.slider-button:active {
+  opacity: 0.3;
+}
+
 .slider-controls {
   position: absolute;
   top: 50%;
@@ -611,6 +614,7 @@ body {
   justify-content: space-between;
   padding-left: 30px;
   transform: translateY(-220%);
+  z-index: 1;
 }
 
 .slide-image {
@@ -1603,7 +1607,6 @@ body {
   margin-left: -8px;
 }
 
-
 .range-input {
   padding: 0 2px;
   font: inherit;
@@ -1619,7 +1622,6 @@ body {
 .range-input.min {
   width: 30px;
   padding-right: 68px;
-
 }
 
 .range-input.min:focus + .range-input-min-mark::before {
@@ -1773,7 +1775,6 @@ body {
   border: none;
   margin-top: 35px;
 }
-
 
 /*Sorting*/
 
@@ -2172,10 +2173,11 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
+  overflow-y: auto;
 }
 
 .modal {
@@ -2273,6 +2275,11 @@ body {
   margin-top: 14px;
 }
 
+/*Invalid*/
+.order-form-field.quantity:invalid {
+  border: 2px solid #FF3D3D;
+}
+
 .order-form-label {
   font-weight: 700;
   font-size: 18px;
@@ -2306,8 +2313,33 @@ body {
   color: #000000;
 }
 
-.order-form-field.e-mail {
+/*Invalid*/
+.order-form-field.e-mail:invalid {
   outline: 2px solid #FF3D3D;
+}
+
+.order-form-field.e-mail:invalid + .e-mail-comment {
+  color: #FF3D3D;
+}
+
+/*Disabled*/
+.order-form-field:disabled {
+  background: #F0F0F0;
+  opacity: 0.3;
+}
+
+/*Focus*/
+.order-form-field.e-mail:focus,
+.order-form-field.name:focus,
+.order-form-field.desc:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+/*Hover*/
+.order-form-field.e-mail:hover,
+.order-form-field.name:hover,
+.order-form-field.desc:hover {
+  background: #DCDCDC;
 }
 
 .field-comment {
@@ -2315,10 +2347,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #000000;
-}
-
-.e-mail-comment {
-  color: #FF3D3D;
 }
 
 .order-form-field {
@@ -2338,6 +2366,7 @@ body {
   height: 60px;
   margin: 0;
   border: none;
+  box-sizing: border-box;
 }
 
 .order-form-field.quantity {
@@ -2345,6 +2374,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .button-order {
