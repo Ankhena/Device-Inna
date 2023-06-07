@@ -142,6 +142,7 @@ body {
   left: -2px;
   top: -2px;
   border: 2px solid #AF4FFF;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -242,24 +243,26 @@ body {
 }
 
 .navigation-link:hover {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-link:focus {
-  outline: 2px solid #AF4FFF;
-  opacity: 1;
+  outline: 2px solid rgba(175, 79, 255, 1.0)
 }
 
 .navigation-link:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-item-exit {
   min-width: 56px;
   padding-left: 28px;
   padding-right: 26px;
-  opacity: 0.3;
   box-sizing: border-box;
+}
+
+.navigation-link.exit {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-item-person {
@@ -1125,22 +1128,43 @@ body {
   position: relative;
 }
 
-.field {
+.newsletter-field {
   width: 557px;
   border: none;
-  background-color: #F0F0F0;
+  background-color: #FFFFFF;
   box-sizing: border-box;
-
+  padding-top: 11px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  color: #444444;
+  border-bottom: #C4C4C4 solid 3px;
 }
 
-.newsletter-form::before {
-  position: absolute;
-  content: "";
-  height: 3px;
-  width: 557px;
-  background-color: #C4C4C4;
-  display: block;
-  bottom: 0;
+/*Placeholder*/
+.newsletter-field::placeholder {
+  color: #444444;
+  opacity: 0.5;
+  font-family: "Rubik", sans-serif;
+}
+
+/*Focus*/
+.newsletter-field:focus {
+  background: #DCDCDC;
+  outline: none;
+}
+
+/*Invalid*/
+.newsletter-field:invalid {
+  border-bottom: #FF3D3D solid 3px;
+}
+
+/*Disabled*/
+.newsletter-field:disabled {
+  color: (68,68,68, 0.5);
+}
+
+.newsletter-field:disabled {
+  border-bottom: rgba(196,196,196, 0.5) solid 3px;
 }
 
 .newsletter-button {
@@ -1174,7 +1198,6 @@ body {
   position: relative;
   justify-content: center;
   width: 230px;
-
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.2em;
@@ -2183,6 +2206,7 @@ body {
   outline: 2px solid #AF4FFF;
   offset: 2px;
 }
+
 /*Hover*/
 .cart-item-close-button:hover {
   opacity: 0.6;
@@ -2210,7 +2234,7 @@ body {
 
 /*Active*/
 .popover-open-button:active {
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   background: #FFE17F;
 }
 
