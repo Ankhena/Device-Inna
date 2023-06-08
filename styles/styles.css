@@ -2137,6 +2137,10 @@ body {
   display: block;
 }
 
+.navigation-item-basket:focus-within .popover {
+  display: block;
+}
+
 .popover:before {
   content: "";
   top: -6px;
