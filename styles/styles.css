@@ -517,6 +517,7 @@ body {
 
 .dropdown-menu-item-link:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
 }
 
 .dropdown-menu-item.item-1 {
@@ -536,14 +537,13 @@ body {
   text-decoration: none;
 }
 
-.dropdown-menu-item-link.current::before {
+.dropdown-menu-item-link.current::after {
   position: absolute;
   content: " ";
   width: 166px;
   height: 1px;
   background: #000000;
   display: block;
-  top: 21px;
 }
 
 .main-container {
