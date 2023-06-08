@@ -959,11 +959,6 @@ body {
   background: url("../images/track.svg") no-repeat #FFC700 center;
 }
 
-.tooltip-icon:hover {
-  color: #000000;
-  opacity: 1;
-}
-
 .tooltip-icon {
   width: 3px;
   height: 12px;
@@ -974,6 +969,10 @@ body {
   opacity: 0.3;
   border: none;
   margin: 30px 42px;
+}
+
+.tooltip-link:hover  {
+  color: rgba(0, 0, 0, 1.0);
 
 }
 
@@ -2131,7 +2130,6 @@ body {
   line-height: 20px;
   display: none;
 }
-
 
 .popover-open {
   display: block;
