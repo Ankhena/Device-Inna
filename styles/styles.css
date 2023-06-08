@@ -971,7 +971,7 @@ body {
   margin: 30px 42px;
 }
 
-.tooltip-link:hover  {
+.tooltip-link:hover {
   color: rgba(0, 0, 0, 1.0);
 
 }
@@ -1355,7 +1355,6 @@ body {
 .footer-services-link:focus {
   outline: 2px solid #AF4FFF;
   text-decoration: none;
-
 }
 
 .footer-services-list {
@@ -1430,6 +1429,19 @@ body {
   height: 15px;
   top: 30%;
   left: 30%;
+  outline: none;
+}
+
+.footer-social-link:focus::after {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px ;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -12px;
+  left: -12px;
 }
 
 .footer-social-tw {
@@ -1523,6 +1535,7 @@ body {
 
 .breadcrumbs-link:focus {
   outline: 2px solid #AF4FFF;
+
 }
 
 .breadcrumbs-item:not(:last-child)::after {
