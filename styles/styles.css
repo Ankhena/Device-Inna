@@ -251,7 +251,7 @@ body {
 }
 
 .navigation-link:focus {
-  outline: 2px solid rgba(175, 79, 255, 1.0)
+  outline: 2px solid rgba(175, 79, 255, 1.0);
 }
 
 .navigation-link:active {
@@ -1674,7 +1674,7 @@ body {
 
 .catalog-filter-label {
   display: flex;
-  opacity: 0.3;
+  color:rgba(0, 0, 0, .3);
   margin-left: -8px;
 }
 
@@ -1686,7 +1686,7 @@ body {
   border: none;
   appearance: textfield;
   outline: none;
-  opacity: 0.3;
+  color:rgba(0, 0, 0, .3);
   position: relative;
 }
 
@@ -1696,26 +1696,24 @@ body {
 }
 
 .range-input.min:focus + .range-input-min-mark::before {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgba(175, 79, 255, 1.0);
   position: absolute;
   min-width: 54px;
   height: 18px;
   content: "";
   display: block;
   left: -8px;
-  opacity: 1;
   bottom: 1px;
 }
 
 .range-input.max:focus + .range-input-max-mark::before {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgba(175, 79, 255, 1.0);
   position: absolute;
   width: 94px;
   height: 18px;
   content: "";
   display: block;
   right: 38px;
-  opacity: 1;
   bottom: 1px;
 }
 
