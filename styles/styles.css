@@ -136,14 +136,14 @@ body {
 .search-form-label:focus-within::before {
   position: absolute;
   content: "";
-  width: 362px;
-  height: 42px;
+  width: 359px;
+  height: 40px;
   display: block;
-  left: -2px;
-  top: -2px;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
   padding: 5px;
   box-sizing: border-box;
+  outline-offset: 2px;
+  z-index: 2;
 }
 
 /*Placeholder*/
@@ -175,15 +175,15 @@ body {
 }
 
 /*Hover*/
-.header-button:hover {
+.header-button:not([disabled]):hover {
   color: #FFFFFF;
   background: #000000;
 }
 
 /*Active*/
 .header-button:active {
-  color: #FFFFFF;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+  background: #000000;
 }
 
 /*Focus*/
@@ -193,16 +193,19 @@ body {
   width: 158px;
   height: 40px;
   display: block;
-  left: -2px;
+  right: -2px;
   top: -2px;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
   box-sizing: border-box;
+  outline-offset: 2px;
 }
 
 /*Disabled*/
 .header-button:disabled {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, .3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .navigation-list {
   display: flex;
@@ -212,7 +215,6 @@ body {
   list-style-type: none;
   flex-wrap: wrap;
   box-sizing: border-box;
-
 }
 
 .navigation-link.enter {
@@ -227,7 +229,7 @@ body {
 }
 
 .navigation-link.enter::before {
-  background: url("../images/header/enter.svg") no-repeat center;
+  background: currentColor;
   mask: url("../images/header/enter.svg") no-repeat center;
   -webkit-mask: url("../images/header/enter.svg") no-repeat center;
   content: "";
@@ -242,8 +244,10 @@ body {
   padding-right: 11px;
 }
 
+/*Hover*/
 .navigation-link:hover {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .6);
+
 }
 
 .navigation-link:focus {
@@ -276,7 +280,7 @@ body {
 }
 
 .navigation-link.person::before {
-  background: url("../images/header/enter.svg") no-repeat center;
+  background: currentColor;
   mask: url("../images/header/enter.svg") no-repeat center;
   -webkit-mask: url("../images/header/enter.svg") no-repeat center;
   content: "";
@@ -301,7 +305,7 @@ body {
 }
 
 .navigation-link.compare::before {
-  background: url("../images/header/compare.svg") no-repeat center;
+  background: currentColor;
   mask: url("../images/header/compare.svg") no-repeat center;
   -webkit-mask: url("../images/header/compare.svg") no-repeat center;
   content: "";
@@ -323,7 +327,7 @@ body {
 }
 
 .navigation-link.basket::before {
-  background: url("../images/header/cart.svg") no-repeat center;
+  background: currentColor;
   mask: url("../images/header/cart.svg") no-repeat center;
   -webkit-mask: url("../images/header/cart.svg") no-repeat center;
   content: "";
@@ -453,6 +457,7 @@ body {
 .navigation-link-user.catalog {
   position: relative;
   width: 100%;
+  z-index: 3;
 }
 
 .navigation-link-user.catalog::before {
@@ -480,6 +485,7 @@ body {
 
 .navigation-link-user.catalog:focus-within {
   outline: 2px solid #AF4FFF;
+  outline-offset: 4px;
 }
 
 .dropdown-menu-list {
@@ -1160,11 +1166,11 @@ body {
 
 /*Disabled*/
 .newsletter-field:disabled {
-  color: (68,68,68, 0.5);
+  color: (68, 68, 68, 0.5);
 }
 
 .newsletter-field:disabled {
-  border-bottom: rgba(196,196,196, 0.5) solid 3px;
+  border-bottom: rgba(196, 196, 196, 0.5) solid 3px;
 }
 
 .newsletter-button {
