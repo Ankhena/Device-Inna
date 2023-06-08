@@ -563,13 +563,17 @@ body {
   grid-column: 1/2;
   grid-row: 1/2;
   opacity: 0;
-
 }
 
 .slide.current {
   opacity: 1;
   z-index: 1;
 }
+
+.slide:not(.current) .details {
+  visibility: hidden;
+}
+
 
 .slide-figure {
   padding-right: 40px;
