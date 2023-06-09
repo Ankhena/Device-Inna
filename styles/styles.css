@@ -172,6 +172,7 @@ body {
   line-height: 20px;
   text-align: center;
   position: relative;
+  border-left: transparent;
 }
 
 /*Hover*/
@@ -197,7 +198,7 @@ body {
   top: -2px;
   outline: 2px solid #AF4FFF;
   box-sizing: border-box;
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 /*Disabled*/
