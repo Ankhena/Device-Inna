@@ -2075,6 +2075,7 @@ body {
   background: #EBEBEB;
   margin-left: 40px;
   margin-right: 40px;
+
 }
 
 .pagination {
@@ -2086,52 +2087,72 @@ body {
   padding-bottom: 15px;
 }
 
-.pagination-prev {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  text-transform: uppercase;
-  opacity: 0.3;
-  min-width: 78px;
-  align-self: center;
-}
-
 .pagination-link {
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
-  color: #444444;
+  color: rgba(68,68,68);
   display: block;
-  min-width: 10px;
-  padding: 16px;
-  opacity: 0.3;
 }
 
-.pagination-next {
+
+/*Pagination-direction*/
+.pagination-direction {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
   align-self: center;
   opacity: 1;
-  min-width: 91px;
+  padding: 25px;
+  font-size: 18px;
+  background: #EBEBEB;
 }
 
-.pagination-container:hover {
+.pagination-direction.current {
+  color:rgba(0,0,0,.3);
+}
+
+.pagination-link.pagination-direction:active {
+  color:rgba(0, 0, 0, 0.3);
   background: #DCDCDC;
 }
 
-.pagination-container:active {
-  opacity: 0.3;
+.pagination-direction:focus-within, .pagination-direction.current:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  color:rgba(0, 0, 0, 1);
+  background:#F0F0F0;
 }
 
-.pagination-container:focus-within {
-  border: 2px solid #AF4FFF;
+.pagination-direction:hover  {
+  background: #DCDCDC;
+  color:rgba(0, 0, 0, 1);
+}
+/*Pagination-number*/
+.pagination-number {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 17px;
+  color: rgba(68,68,68, .3);
 }
 
-.pagination-current {
-  opacity: 0.6;
+.pagination-number:hover, .pagination-number.current:hover  {
+  color: rgba(68,68,68,1.0);
 }
 
+.pagination-number:active, .pagination-number.current:active {
+  color: rgba(68,68,68,.1);
+}
+
+.pagination-number:focus-within, .pagination-number.current:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  color: rgba(68,68,68,.3);
+}
+
+.pagination-number.current {
+  color: rgba(68,68,68,.6);
+}
+/*Popover*/
 .popover {
   position: absolute;
   right: 0;
