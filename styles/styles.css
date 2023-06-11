@@ -2111,19 +2111,19 @@ body {
   color:rgba(0,0,0,.3);
 }
 
-.pagination-link.pagination-direction:active {
+.pagination-direction:not(.current):active {
   color:rgba(0, 0, 0, 0.3);
   background: #DCDCDC;
 }
 
-.pagination-direction:focus-within, .pagination-direction.current:focus-within {
+.pagination-direction:not(.current):focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   color:rgba(0, 0, 0, 1);
   background:#F0F0F0;
 }
 
-.pagination-direction:hover  {
+.pagination-direction:not(.current):hover  {
   background: #DCDCDC;
   color:rgba(0, 0, 0, 1);
 }
@@ -2135,15 +2135,15 @@ body {
   color: rgba(68,68,68, .3);
 }
 
-.pagination-number:hover, .pagination-number.current:hover  {
+.pagination-number:not(.current):hover  {
   color: rgba(68,68,68,1.0);
 }
 
-.pagination-number:active, .pagination-number.current:active {
+.pagination-number::not(.current):active {
   color: rgba(68,68,68,.1);
 }
 
-.pagination-number:focus-within, .pagination-number.current:focus-within {
+.pagination-number:not(.current):focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   color: rgba(68,68,68,.3);
