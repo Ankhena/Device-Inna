@@ -1221,6 +1221,9 @@ body {
   letter-spacing: 0.2em;
 }
 
+.button.feedback {
+  width: 257px;
+}
 .button:focus {
   outline: 2px solid #AF4FFF;
 }
