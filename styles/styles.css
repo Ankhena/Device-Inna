@@ -1181,6 +1181,23 @@ body {
   border: 3px solid #C4C4C4;
 }
 
+.newsletter-button:hover {
+  color: rgba(255, 255, 255);
+  background: #000000;
+  border: 3px solid #000000;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, .3);
+  background: #000000;
+  border: 3px solid #000000;
+}
+
+.newsletter-button:focus {
+  outline: 3px solid #C4C4C4;
+  outline-offset: 2px;
+}
+
 .newsletter-form-text {
   flex-grow: 1;
   text-align: end;
@@ -1214,6 +1231,7 @@ body {
 .button.feedback {
   width: 257px;
 }
+
 .button:focus {
   outline: 2px solid #AF4FFF;
 }
@@ -1947,7 +1965,7 @@ body {
 }
 
 .product-list-container {
-  background-color: rgba(255,255,255);
+  background-color: rgba(255, 255, 255);
   padding-bottom: 78px;
 }
 
@@ -1989,6 +2007,7 @@ body {
 .product-card-title-wrap:active {
   opacity: 0.3;
 }
+
 .product-card-price {
   font-weight: 400;
   display: inline-block;
@@ -2094,7 +2113,7 @@ body {
 
 .pagination-link {
   text-decoration: none;
-  color: rgba(68,68,68);
+  color: rgba(68, 68, 68);
   display: block;
 }
 
@@ -2113,50 +2132,52 @@ body {
 }
 
 .pagination-direction.current {
-  color:rgba(0,0,0,.3);
+  color: rgba(0, 0, 0, .3);
 }
 
 .pagination-direction:not(.current):active {
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   background: #DCDCDC;
 }
 
 .pagination-direction:not(.current):focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-  color:rgba(0, 0, 0, 1);
-  background:#F0F0F0;
+  color: rgba(0, 0, 0, 1);
+  background: #F0F0F0;
 }
 
-.pagination-direction:not(.current):hover  {
+.pagination-direction:not(.current):hover {
   background: #DCDCDC;
-  color:rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
 }
+
 /*Pagination-number*/
 .pagination-number {
   font-size: 16px;
   line-height: 20px;
   padding: 10px 17px;
-  color: rgba(68,68,68, .3);
+  color: rgba(68, 68, 68, .3);
 }
 
-.pagination-number:not(.current):hover  {
-  color: rgba(68,68,68,1.0);
+.pagination-number:not(.current):hover {
+  color: rgba(68, 68, 68, 1.0);
 }
 
 .pagination-number::not(.current):active {
-  color: rgba(68,68,68,.1);
+  color: rgba(68, 68, 68, .1);
 }
 
 .pagination-number:not(.current):focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-  color: rgba(68,68,68,.3);
+  color: rgba(68, 68, 68, .3);
 }
 
 .pagination-number.current {
-  color: rgba(68,68,68,.6);
+  color: rgba(68, 68, 68, .6);
 }
+
 /*Popover*/
 .popover {
   position: absolute;
