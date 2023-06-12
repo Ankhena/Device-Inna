@@ -773,10 +773,10 @@ body {
   z-index: -2;
 }
 
-.category-item-link:active {
-  background: #FFE17F;
-  opacity: 0.3;
+.category-item-link:active::after {
+  background: #FFE17F var(--bgi) no-repeat center;
 }
+
 
 .category-item-link:focus-visible {
   outline: 2px solid #AF4FFF;
