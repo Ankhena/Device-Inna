@@ -963,7 +963,7 @@ body {
   margin: 30px 42px;
 }
 
-.tooltip-link:hover .tooltip-icon{
+.tooltip-link:hover .tooltip-icon {
   color: rgba(0, 0, 0, 1.0);
 }
 
@@ -1983,11 +1983,11 @@ body {
   display: block;
 }
 
-.product-card-link:active .product-card-title{
+.product-card-link:active .product-card-title {
   opacity: 0.3;
 }
 
-.product-card-link:hover .product-card-title{
+.product-card-link:hover .product-card-title {
   opacity: 0.6;
 }
 
