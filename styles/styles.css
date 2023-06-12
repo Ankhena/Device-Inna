@@ -1998,8 +1998,8 @@ body {
   position: relative;
 }
 
-.product-card:hover::before,
-.product-card:active::before {
+.image-wrap:hover::before,
+.image-wrap:active::before {
   position: absolute;
   content: "Подробнее";
   background: #FFE17F;
