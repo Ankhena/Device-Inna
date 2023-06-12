@@ -2001,7 +2001,7 @@ body {
 .product-card-link:active .image-wrap::before {
   position: absolute;
   content: "Подробнее";
-  background: #FFE17F;
+
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   width: 210px;
@@ -2017,6 +2017,13 @@ body {
   text-transform: uppercase;
   z-index: 2;
   box-shadow: 0 0 0 300px rgba(240, 240, 240, 0.8);
+}
+
+.product-card-link:hover .image-wrap::before {
+  background:  #FFE17F;
+}
+.product-card-link:active .image-wrap::before {
+ background: #FFC700;
 }
 
 .image-wrap {
@@ -2119,6 +2126,7 @@ body {
 
 .pagination-direction.current {
   color: rgba(0, 0, 0, .3);
+  outline: none;
 }
 
 .pagination-direction:not(.current):active {
@@ -2126,7 +2134,7 @@ body {
   background: #DCDCDC;
 }
 
-.pagination-direction:not(.current):focus-within {
+.pagination-direction:not(.current):focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   color: rgba(0, 0, 0, 1);
@@ -2150,7 +2158,7 @@ body {
   color: rgba(68, 68, 68, 1.0);
 }
 
-.pagination-number::not(.current):active {
+.pagination-number:not(.current):active {
   color: rgba(68, 68, 68, .1);
 }
 
@@ -2162,6 +2170,7 @@ body {
 
 .pagination-number.current {
   color: rgba(68, 68, 68, .6);
+  outline: none;
 }
 
 /*Popover*/
