@@ -674,21 +674,18 @@ body {
 
 .table-description {
   font-size: 16px;
-  padding: 0;
-  padding-right: 20px;
-  padding-top: 12px;
+  padding: 12px 20px 0 0;
 }
 
 /*Slider-pagination*/
 .slider-pagination {
-  margin: 0;
+  margin: -26px 0 0 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  margin-top: -26px;
   z-index: 1;
 }
 
@@ -827,12 +824,10 @@ body {
 
 .services-list {
   margin: 0;
-  padding: 0;
-  width: 287px;
   margin-right: auto;
+  padding: 64px 0 65px 0;
+  width: 287px;
   list-style-type: none;
-  padding-top: 64px;
-  padding-bottom: 65px;
 }
 
 .services-item {
@@ -845,11 +840,9 @@ body {
 
 .services-tabs {
   margin: 0;
-  padding: 0;
   margin-right: 63px;
+  padding: 77px 0;
   width: 694px;
-  padding-top: 77px;
-  padding-bottom: 77px;
   display: flex;
   justify-content: space-between;
 }
@@ -922,8 +915,8 @@ body {
 
 .tooltip {
   margin: 0 auto;
-  width: 1160px;
   margin-top: 70px;
+  width: 1160px;
   display: flex;
 }
 
@@ -972,7 +965,6 @@ body {
 
 .tooltip-link:hover {
   color: rgba(0, 0, 0, 1.0);
-
 }
 
 /*Contacts*/
@@ -981,8 +973,8 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  justify-content: space-between;
   margin-top: 70px;
+  justify-content: space-between;
 }
 
 .contacts {
@@ -1010,9 +1002,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding: 30px 0 15px 0;
 }
 
 .contacts-address {
@@ -1037,8 +1027,8 @@ body {
 .contacts-schedule {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-bottom: 30px;
+  list-style-type: none;
 }
 
 /*About us*/
@@ -1061,10 +1051,8 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  margin: 0;
+  margin: 47px 0 48px 0;
   padding: 0;
-  margin-top: 47px;
-  margin-bottom: 48px;
 }
 
 .about-us-text {
@@ -1130,9 +1118,9 @@ body {
 .newsletter-form {
   display: flex;
   padding: 0;
+  padding-top: 144px;
   margin: 0 auto;
   width: 1160px;
-  padding-top: 144px;
   position: relative;
 }
 
@@ -1995,16 +1983,6 @@ body {
   display: block;
 }
 
-.product-card-image:hover,
-.product-card-image:active {
-  background: rgba(240, 240, 240, 0.8);
-  opacity: 0.8;
-}
-
-.product-card-title-wrap:hover,
-.product-card-title-wrap:active {
-  opacity: 0.6;
-}
 
 .product-card-title-wrap:active {
   opacity: 0.3;
@@ -2029,7 +2007,7 @@ body {
   width: 210px;
   height: 8px;
   left: 70px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -2038,6 +2016,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 2;
+  box-shadow: 0 0 0 300px rgba(240, 240, 240, 0.8);
+}
+
+.image-wrap {
+  overflow: hidden;
 }
 
 .product-card-link:focus {
