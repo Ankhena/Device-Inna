@@ -2357,7 +2357,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
+  z-index: 3;
   overflow-y: auto;
 }
 
@@ -2457,8 +2457,12 @@ body {
 }
 
 /*Invalid*/
-.order-form-field.quantity:invalid {
+.plus-minus-wrapper.invalid {
   border: 2px solid #FF3D3D;
+}
+
+.order-form-field.quantity:focus-visible {
+  outline: none;
 }
 
 .order-form-label {
@@ -2488,10 +2492,6 @@ body {
   background: url("../images/modal/modal-mail.svg") no-repeat center;
   top: 57px;
   right: 24px;
-}
-
-.order-form-field.e-mail::placeholder {
-  color: #000000;
 }
 
 /*Invalid*/
@@ -2548,6 +2548,9 @@ body {
   margin: 0;
   border: none;
   box-sizing: border-box;
+}
+.order-form-button:focus-visible {
+  outline: none;
 }
 
 .order-form-field.quantity {
