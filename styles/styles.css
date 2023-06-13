@@ -1155,13 +1155,14 @@ body {
 /*Invalid*/
 .newsletter-field:invalid {
   border-bottom: #FF3D3D solid 3px;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   color: rgba(68, 68, 68, 0.5);
 }
 
 /*Disabled*/
 .newsletter-field:disabled {
   color: rgba(68, 68, 68, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .newsletter-field:disabled {
