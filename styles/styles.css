@@ -1803,7 +1803,7 @@ body {
   margin-top: 35px;
   padding: 0;
   border: none;
-
+  position: relative;
 }
 
 .catalog-filter-group-title::before {
