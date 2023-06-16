@@ -2330,6 +2330,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
