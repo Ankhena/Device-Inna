@@ -407,7 +407,7 @@ body {
   left: 17px;
   top: 8px;
   position: absolute;
-
+  padding-left: 2px;
 }
 
 .basket-counter {
