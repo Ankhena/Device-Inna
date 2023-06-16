@@ -391,12 +391,14 @@ body {
   min-width: 120px;
   flex-wrap: wrap;
   margin-left: 18px;
+  position: relative;
+  z-index: 0;
 }
 
 .basket-counter::before {
   background: currentColor;
-  mask: url("../images/header/cart.svg") no-repeat center;
   -webkit-mask: url("../images/header/cart.svg") no-repeat center;
+  mask: url("../images/header/cart.svg") no-repeat center;
   content: "";
   vertical-align: baseline;
   display: inline-block;
@@ -421,7 +423,6 @@ body {
   width: 21px;
   height: 21px;
   align-self: center;
-  z-index: 2;
 }
 
 .navigation-user-container {
