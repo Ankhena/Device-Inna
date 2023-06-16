@@ -444,7 +444,7 @@ body {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  navigation-link-user display: flex;
+  display: flex;
   min-width: 480px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -452,10 +452,12 @@ body {
   list-style-type: none;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
 }
 
-.navigation-user-item {
+.navigation-user-item:not(:last-child) {
   position: relative;
+  padding-right: 45px;
 }
 
 .navigation-link-user.current::after {
