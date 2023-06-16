@@ -340,6 +340,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
+  max-width: 146px;
 }
 
 .navigation-link.person::before {
@@ -361,11 +362,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-}
-
-.navigation-item-compare {
-  width: 109px;
-  margin-right: 5px;
+  max-width: 115px;
 }
 
 .navigation-link.compare::before {
@@ -378,8 +375,9 @@ body {
   width: 10px;
   height: 12px;
   top: 12px;
-  margin-right: 5px;
+  margin-right: 11px;
 }
+
 
 .navigation-link.basket {
   -webkit-box-sizing: border-box;
@@ -390,9 +388,11 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-width: 132px;
+  min-width: 120px;
   position: relative;
-  padding-right: 10px;
+  flex-wrap: wrap;
+  margin-left: 18px;
+
 }
 
 .navigation-link.basket::before {
@@ -407,6 +407,7 @@ body {
   left: 17px;
   top: 8px;
   position: absolute;
+
 }
 
 .basket-counter {
@@ -421,6 +422,7 @@ body {
   min-width: 21px;
   z-index: 1;
   margin-top: 3px;
+
 }
 
 .basket-counter::before {
@@ -444,6 +446,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 30px;
   margin: 0;
   -webkit-box-pack: justify;
@@ -457,7 +460,7 @@ body {
   margin: 0;
   padding: 0;
   display: -webkit-box;
-  display: -ms-flexbox;
+  display: -ms-flexbox;navigation-link-user
   display: flex;
   min-width: 480px;
   -webkit-box-pack: justify;
@@ -472,14 +475,14 @@ body {
   position: relative;
 }
 
-.navigation-link-user.current::before {
+.navigation-link-user.current::after {
   position: absolute;
   content: " ";
-  width: 125px;
+  width: 130px;
   height: 2px;
   background: #000000;
   display: block;
-  top: 37px;
+  bottom: 2px;
 }
 
 .navigation-link {
@@ -544,6 +547,7 @@ body {
   position: relative;
   width: 100%;
   z-index: 3;
+  padding-right: 7px;
 }
 
 .navigation-link-user.catalog::before {
@@ -2089,12 +2093,15 @@ body {
   min-width: 141px;
   background-image: url("../images/arrow-down.svg");
   background-position-y: center;
-  background-position: right 12px;
+  background-position-x: center;
+  background-position: right 12px center;
   background-repeat: no-repeat;
   font-size: 18px;
   line-height: 30px;
   border: none;
   background-color: #F0F0F0;
+
+  padding-right: 30px;
 }
 
 .select-control:hover {
@@ -2114,6 +2121,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2328,6 +2336,7 @@ body {
   background: #EBEBEB;
   margin-left: 40px;
   margin-right: 40px;
+  flex-wrap: wrap;
 
 }
 
