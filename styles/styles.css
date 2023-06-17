@@ -363,7 +363,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  max-width: 115px;
+  min-width: 115px;
 }
 
 .navigation-link.compare::before {
@@ -420,7 +420,7 @@ body {
   position: relative;
   border-radius: 50%;
   background-color: #FFFFFF;
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   align-self: center;
 }
@@ -434,7 +434,7 @@ body {
   margin: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-left: 60px;
   width: 1040px;
 }
@@ -526,6 +526,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
+  margin-right: auto;
 }
 
 .navigation-link-user.catalog {
@@ -1550,9 +1551,18 @@ body {
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.footer-services-item {
+  margin-right: 35px;
+  margin-bottom: 5px;
+}
+
+.footer-services-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-contacts-phone {
@@ -1591,23 +1601,26 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 27px;
+  max-width: 150px;
 }
 
 .footer-social-item {
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  margin-bottom: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   position: relative;
 }
+
 
 .footer-social-item:hover {
   background: #FFC700;
