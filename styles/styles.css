@@ -61,10 +61,10 @@ body {
 .page-header {
   background-color: #FFE17F;
   color: #000000;
-  width: 1160px;
+  min-width: 1160px;
   margin: 14px auto 0 auto;
   position: relative;
-  top: 26px;
+  top: 20px;
 
 }
 
@@ -736,7 +736,7 @@ margin-left :auto;
 .slide-hero::before {
   position: absolute;
   top: -40px;
-  right: 49px;
+  right: 10px;
   counter-increment: my-counter;
   content: counter(my-counter, decimal-leading-zero);
   font-size: 180px;
@@ -895,18 +895,21 @@ margin-left :auto;
   font-family: "Raleway", sans-serif;
   line-height: 24px;
   text-decoration: none;
+
   color: #000000;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 160px 32px 60px;
   grid-template-rows: 160px 60px;
   grid-row-gap: 32px;
+  letter-spacing: -0.02em;
 }
 
 .category-item-description {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: 2/2;
+  align-self: start;
 }
 
 .services {
@@ -915,7 +918,7 @@ margin-left :auto;
   display: flex;
   background-color: #F0F0F0;
   min-width: 1440px;
-  margin-top: 172px;
+  margin-top: 173px;
   padding: 0;
 }
 
@@ -928,6 +931,7 @@ margin-left :auto;
   display: flex;
   position: relative;
   top: -106px;
+height: 289px;
 }
 
 .services-container::after {
@@ -958,7 +962,7 @@ margin-left :auto;
 .services-tabs {
   margin: 0;
   margin-right: 63px;
-  padding: 77px 0;
+  padding: 73px 0;
   width: 694px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,7 +1001,7 @@ margin-left :auto;
 
 .tabs-list-item::after {
   content: " ";
-  bottom: 78px;
+  bottom: 48px;
   right: 63px;
   position: absolute;
 }
@@ -1185,19 +1189,25 @@ margin-left :auto;
 }
 
 .about-us-text {
+  padding: 0;
+  margin: 0;
   margin-bottom: 30px;
+  width: 497px;
 }
 
 .about-us-item {
   font-weight: 700;
   line-height: 20px;
   color: #000000;
-  margin-bottom: 19px;
-  padding-top: 5px;
+
+  padding-bottom: 12px;
 }
 
 .about-us-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 34px;
 }
 
 .about-us-item::after {
@@ -1209,7 +1219,7 @@ margin-left :auto;
   border-radius: 50%;
   right: 26px;
   position: relative;
-  bottom: 17px;
+  bottom: 18px;
 }
 
 /*Newsletter*/
@@ -1218,7 +1228,7 @@ margin-left :auto;
   background-color: #F0F0F0;
   min-width: 1440px;
   margin-top: 70px;
-  padding-bottom: 56px;
+  padding-bottom: 46px;
 }
 
 .newsletter-title {
@@ -1229,12 +1239,14 @@ margin-left :auto;
   margin: 0;
   padding: 0;
   padding-top: 64px;
+  width: 400px;
 }
 
 .newsletter-text {
   margin: 0;
   margin-left: auto;
   margin-top: 74px;
+  padding: 0;
   width: 560px;
 }
 
@@ -1251,7 +1263,7 @@ margin-left :auto;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  padding-top: 144px;
+  padding-top: 134px;
   margin: 0 auto;
   width: 1160px;
   position: relative;
@@ -1326,10 +1338,26 @@ margin-left :auto;
   border-bottom: rgba(196, 196, 196, 0.5) solid 3px;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+}
+
 .newsletter-button {
   width: 253px;
-  letter-spacing: 0.2em;
   border: 3px solid #C4C4C4;
+
 }
 
 .newsletter-button:hover {
@@ -1367,24 +1395,9 @@ margin-left :auto;
   top: 7px;
 }
 
-.button {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 220px;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 0.2em;
-}
 
 .button.feedback {
-  width: 257px;
+  width: 245px;
 }
 
 .button:focus-visible {
@@ -1463,8 +1476,8 @@ margin-left :auto;
 .page-footer-container {
   width: 1160px;
   margin: 0 auto;
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding-top: 61px;
+  padding-bottom: 61px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 240px 119px 444px 119px 238px;
@@ -1513,7 +1526,7 @@ margin-left :auto;
   height: 7px;
   -ms-grid-row: 3;
   grid-row-start: 3;
-  margin-top: 34px;
+margin-top: 27px;
 }
 
 .footer-services-link {
@@ -1609,7 +1622,6 @@ margin-left :auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 27px;
   max-width: 150px;
 }
 
@@ -1617,7 +1629,7 @@ margin-left :auto;
   width: 40px;
   height: 40px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   position: relative;
@@ -1699,7 +1711,6 @@ margin-left :auto;
   height: 33px;
   -ms-grid-column-align: end;
   justify-self: end;
-  margin-top: 27px;
 }
 
 /*Inner-page*/
