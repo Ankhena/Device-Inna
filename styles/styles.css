@@ -64,7 +64,7 @@ body {
   min-width: 1160px;
   margin: 14px auto 0 auto;
   position: relative;
-  top: 20px;
+  top: 25px;
 
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .navigation-inner {
-  padding-bottom: 36px;
+  padding-bottom: 16px;
 }
 
 .form-container {
@@ -117,7 +117,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 40px;
-margin-left :auto;
+  margin-left: auto;
 }
 
 .search-form-label {
@@ -636,8 +636,7 @@ margin-left :auto;
 }
 
 .main-inner {
-  padding-top: 35px;
-  margin-top: 26px;
+  padding-top: 59px;
 }
 
 /*Goods*/
@@ -931,7 +930,7 @@ margin-left :auto;
   display: flex;
   position: relative;
   top: -106px;
-height: 289px;
+  height: 289px;
 }
 
 .services-container::after {
@@ -1526,7 +1525,7 @@ height: 289px;
   height: 7px;
   -ms-grid-row: 3;
   grid-row-start: 3;
-margin-top: 27px;
+  margin-top: 27px;
 }
 
 .footer-services-link {
@@ -1728,6 +1727,7 @@ margin-top: 27px;
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
+  margin-left: 60px;
 }
 
 .breadcrumbs-list {
@@ -1738,6 +1738,7 @@ margin-top: 27px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 60px;
 }
 
 .breadcrumbs-link {
@@ -1779,7 +1780,7 @@ margin-top: 27px;
 
 .catalog-products {
   background-color: rgba(240, 240, 240, 1);
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .catalog-products-container {
@@ -1812,6 +1813,7 @@ margin-top: 27px;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+  letter-spacing: 0.2em;
 }
 
 .catalog-filter-group {
@@ -2094,6 +2096,7 @@ margin-top: 27px;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 0.2em;
 }
 
 .select-control {
@@ -2137,9 +2140,7 @@ margin-top: 27px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding: 25px;
+  padding: 20px 40px 25px 40px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2223,8 +2224,12 @@ margin-top: 27px;
 }
 
 .product-card-title {
-  max-width: 226px;
+  max-width: 203px;
   margin: 0;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+
+
 }
 
 .product-card-image {
@@ -2241,10 +2246,11 @@ margin-top: 27px;
 
 .product-card-price {
   font-weight: 400;
+  line-height: 21px;
   display: inline-block;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
-  align-self: center;
+
 }
 
 .product-card-link:hover .image-wrap::before,
@@ -2384,6 +2390,7 @@ margin-top: 27px;
   padding: 25px;
   font-size: 18px;
   background: #EBEBEB;
+  letter-spacing: 0.2em;
 }
 
 .pagination-direction.current {
