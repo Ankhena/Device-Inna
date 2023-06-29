@@ -837,24 +837,12 @@ body {
   grid-column-gap: 40px;
 }
 
-.category-list-item {
-  position: relative;
-}
-
-.category-item-link::before {
-  content: " ";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f var(--bgi) no-repeat center;
-  display: block;
-}
-
 .category-item-link:hover::before {
-  background: #ffc700 var(--bgi) no-repeat center;
+  background: #ffc700;
 }
 
 .category-item-link:active::before {
-  background: #ffe17f var(--bgi) no-repeat center;
+  background: #ffe17f;
 }
 
 .category-item-link:focus-visible {
@@ -872,6 +860,10 @@ body {
   grid-template-rows: 160px 60px;
   grid-row-gap: 32px;
   letter-spacing: -0.36px;
+}
+
+.category-item-image {
+  background: #ffe17f;
 }
 
 .services {
