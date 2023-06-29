@@ -837,12 +837,8 @@ body {
   grid-column-gap: 40px;
 }
 
-.category-item-link:hover::before {
-  background: #ffc700;
-}
-
-.category-item-link:active::before {
-  background: #ffe17f;
+.category-item-link:active {
+  background: rgba(255, 225, 127, 0);
 }
 
 .category-item-link:focus-visible {
@@ -864,6 +860,10 @@ body {
 
 .category-item-image {
   background: #ffe17f;
+}
+
+.category-item-image:hover {
+  background: #ffc700;
 }
 
 .services {
