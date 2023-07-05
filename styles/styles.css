@@ -2555,9 +2555,9 @@ body {
 
 .modal {
   margin: auto;
-  padding: 72px 80px;
+  padding: 65px 70px;
   background-color: #ffffff;
-  outline: 10px solid #000;
+  outline: 12px solid #000;
 }
 
 .modal-order {
@@ -2571,7 +2571,7 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 12px;
+  top: 10px;
   right: 0;
   width: 26px;
   height: 26px;
@@ -2598,7 +2598,7 @@ body {
 
 .modal-title {
   margin: 0;
-  padding-bottom: 42px;
+  margin-bottom: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -2614,7 +2614,7 @@ body {
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
-  row-gap: 42px;
+  row-gap: 34px;
 }
 
 .order-form-label.name {
@@ -2627,6 +2627,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  letter-spacing: -0.36px;
+  padding-bottom: 10px;
 }
 
 .order-form-label.e-mail {
@@ -2639,6 +2641,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  letter-spacing: -0.36px;
 }
 
 .order-form-label.desc {
@@ -2652,6 +2655,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  letter-spacing: -0.36px;
 }
 
 .quantity-wrapper {
@@ -2666,8 +2670,8 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  padding: 20px;
-  width: 60px;
+  padding: 10px;
+  width: 70px;
   height: 60px;
   margin: 0;
   border: none;
@@ -2760,7 +2764,7 @@ body {
   padding: 20px;
   background: #f0f0f0;
   border: none;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .order-form-button:focus-visible {
@@ -2777,10 +2781,12 @@ body {
 }
 
 .button-order {
-  margin-top: 42px;
+  margin-top: 47px;
   border: 0;
   background: #ffffff;
   z-index: 0;
+  letter-spacing: 3.6px;
+  width: 200px;
 }
 
 .modal-container-close {
@@ -2800,7 +2806,7 @@ body {
   border: none;
   background-color: #ffe17f;
   border-radius: 50%;
-  padding: 7px;
+  padding: 10px;
   margin: 0;
   display: block;
   width: 26px;
